@@ -477,6 +477,7 @@ Common Vulnerability Enumeration (CVE) identifier associated with the vulnerabil
 		<rdfs:label>Status</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the status of the vulnerability reporting</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://nvd.nist.gov/cve"/>
+		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
 	<owl:ObjectProperty rdf:about="&cve;technicalDescription">

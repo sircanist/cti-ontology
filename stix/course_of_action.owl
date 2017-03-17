@@ -21,14 +21,14 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="http://stix.mitre.org/CourseOfAction">
-		<rdfs:label>STIX Course of Action Ontology</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (STIX) Course of Action.  The Course of Action ontology provides a characterization of a single STIX Course of Action.
+		<rdfs:label>stix Course of Action Ontology</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (stix) Course of Action.  The Course of Action ontology provides a characterization of a single stix Course of Action.
 
-A STIX Course of Action component is used to convey information about courses of action that may be taken either in response to an attack or as a preventative measure prior to an attack. They are used to express both courses of action that might be taken (are possible options are are suggested) in the course of an incident to respond to something that has occurred or to mitigate the effect of an exploit target (vulnerability or misconfiguration) apriori.
+A stix Course of Action component is used to convey information about courses of action that may be taken either in response to an attack or as a preventative measure prior to an attack. They are used to express both courses of action that might be taken (are possible options are are suggested) in the course of an incident to respond to something that has occurred or to mitigate the effect of an exploit target (vulnerability or misconfiguration) apriori.
 
 The course of action component itself contains information about the objective of the action, its efficacy, its likely impact, cost, structured parameter observables, and even a structured course of action meant to be implemented automatically in a tool.
 
-The ontology is based on the STIX Course of Action schema maintained by The MITRE Corporation copyright 2012-2014.  The version number of the ontology is kept in sync with the schema in order to more easily relate between the ontology and the corresponding schema version.
+The ontology is based on the stix Course of Action schema maintained by The MITRE Corporation copyright 2012-2014.  The version number of the ontology is kept in sync with the schema in order to more easily relate between the ontology and the corresponding schema version.
 
 Copyright (c) 2014-2015, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<owl:imports rdf:resource="http://data-marking.mitre.org/Data_Marking"/>

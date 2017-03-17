@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE rdf:RDF [
-	<!ENTITY ciq_xpil "http://www.oasis-open.org/ciq_xpil#">
+	<!ENTITY xpil "http://www.oasis-open.org/ciq_xpil#">
 	<!ENTITY core "tag:champtc:core#">
 	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
 	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -9,7 +9,7 @@
 ]>
 <rdf:RDF
 	xmlns="http://www.oasis-open.org/ciq_xpil#"
-	xmlns:ciq_xpil="http://www.oasis-open.org/ciq_xpil#"
+	xmlns:xpil="http://www.oasis-open.org/ciq_xpil#"
 	xmlns:core="tag:champtc:core#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -27,59 +27,59 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<owl:versionInfo rdf:datatype="&xsd;string">1.0.0-001</owl:versionInfo>
 	</owl:Ontology>
 	
-	<owl:Class rdf:about="&ciq_xpil;AccessCard">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;IdentificationDocument"/>
+	<owl:Class rdf:about="&xpil;AccessCard">
+		<rdfs:subClassOf rdf:resource="&xpil;IdentificationDocument"/>
 		<rdfs:label>Access Card</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Defines an Access Card identification document</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Account">
+	<owl:Class rdf:about="&xpil;Account">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;accountBranch"/>
+				<owl:onProperty rdf:resource="&xpil;accountBranch"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;accountID"/>
+				<owl:onProperty rdf:resource="&xpil;accountID"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;accountName"/>
+				<owl:onProperty rdf:resource="&xpil;accountName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;accountNameType"/>
+				<owl:onProperty rdf:resource="&xpil;accountNameType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;accountType"/>
+				<owl:onProperty rdf:resource="&xpil;accountType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;issuingAuthority"/>
+				<owl:onProperty rdf:resource="&xpil;issuingAuthority"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;issuingCountry"/>
+				<owl:onProperty rdf:resource="&xpil;issuingCountry"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;ownership"/>
+				<owl:onProperty rdf:resource="&xpil;ownership"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -88,10 +88,10 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Allergy">
+	<owl:Class rdf:about="&xpil;Allergy">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;allergyName"/>
+				<owl:onProperty rdf:resource="&xpil;allergyName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -100,29 +100,29 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;BankCard">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;IdentificationDocument"/>
+	<owl:Class rdf:about="&xpil;BankCard">
+		<rdfs:subClassOf rdf:resource="&xpil;IdentificationDocument"/>
 		<rdfs:label>Bank Card</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Defines a Bank Card identification document</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;BodyMarks">
+	<owl:Class rdf:about="&xpil;BodyMarks">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;bodyMarkDescription"/>
+				<owl:onProperty rdf:resource="&xpil;bodyMarkDescription"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;bodyPart"/>
+				<owl:onProperty rdf:resource="&xpil;bodyPart"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;locationOnBodyPart"/>
+				<owl:onProperty rdf:resource="&xpil;locationOnBodyPart"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -131,11 +131,11 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Cellphone">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;ContactNumber"/>
+	<owl:Class rdf:about="&xpil;Cellphone">
+		<rdfs:subClassOf rdf:resource="&xpil;ContactNumber"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;communicationMediaType"/>
+				<owl:onProperty rdf:resource="&xpil;communicationMediaType"/>
 				<owl:hasValue rdf:datatype="&xsd;string">Cellphone</owl:hasValue>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -144,77 +144,77 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Certificate">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;IdentificationDocument"/>
+	<owl:Class rdf:about="&xpil;Certificate">
+		<rdfs:subClassOf rdf:resource="&xpil;IdentificationDocument"/>
 		<rdfs:label>Certificate</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Defines a Certificate identification document</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;ContactNumber">
+	<owl:Class rdf:about="&xpil;ContactNumber">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;areaCode"/>
+				<owl:onProperty rdf:resource="&xpil;areaCode"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;communicationMediaType"/>
+				<owl:onProperty rdf:resource="&xpil;communicationMediaType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;contactHours"/>
+				<owl:onProperty rdf:resource="&xpil;contactHours"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;contactNumberUsage"/>
+				<owl:onProperty rdf:resource="&xpil;contactNumberUsage"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;countryCode"/>
+				<owl:onProperty rdf:resource="&xpil;countryCode"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;extension"/>
+				<owl:onProperty rdf:resource="&xpil;extension"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;internationalNumber"/>
+				<owl:onProperty rdf:resource="&xpil;internationalNumber"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;localNumber"/>
+				<owl:onProperty rdf:resource="&xpil;localNumber"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;nationalNumber"/>
+				<owl:onProperty rdf:resource="&xpil;nationalNumber"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;pin"/>
+				<owl:onProperty rdf:resource="&xpil;pin"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;separator"/>
+				<owl:onProperty rdf:resource="&xpil;separator"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -223,29 +223,29 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;CreditCard">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;IdentificationDocument"/>
+	<owl:Class rdf:about="&xpil;CreditCard">
+		<rdfs:subClassOf rdf:resource="&xpil;IdentificationDocument"/>
 		<rdfs:label>Credit Card</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Defines a Credit Card identification document</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;DescriptionTextLine">
+	<owl:Class rdf:about="&xpil;DescriptionTextLine">
 		<rdfs:label>Free Text Line</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Defines a line of free-from text.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Disability">
+	<owl:Class rdf:about="&xpil;Disability">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;cause"/>
+				<owl:onProperty rdf:resource="&xpil;cause"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;disabilityDescription"/>
+				<owl:onProperty rdf:resource="&xpil;disabilityDescription"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -254,35 +254,35 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;DriverLicense">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;IdentificationDocument"/>
+	<owl:Class rdf:about="&xpil;DriverLicense">
+		<rdfs:subClassOf rdf:resource="&xpil;IdentificationDocument"/>
 		<rdfs:label>Driver License</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Defines a Drivers License  identification document</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;ElectronicAddress">
+	<owl:Class rdf:about="&xpil;ElectronicAddress">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;electronicAddressLabel"/>
+				<owl:onProperty rdf:resource="&xpil;electronicAddressLabel"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;electronicAddressType"/>
+				<owl:onProperty rdf:resource="&xpil;electronicAddressType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;electronicAddressUsage"/>
+				<owl:onProperty rdf:resource="&xpil;electronicAddressUsage"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;electronicAddressValue"/>
+				<owl:onProperty rdf:resource="&xpil;electronicAddressValue"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -291,22 +291,22 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Event">
+	<owl:Class rdf:about="&xpil;Event">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;eventDateTime"/>
+				<owl:onProperty rdf:resource="&xpil;eventDateTime"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;eventName"/>
+				<owl:onProperty rdf:resource="&xpil;eventName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;eventType"/>
+				<owl:onProperty rdf:resource="&xpil;eventType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -315,16 +315,16 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Favorite">
+	<owl:Class rdf:about="&xpil;Favorite">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;favoriteType"/>
+				<owl:onProperty rdf:resource="&xpil;favoriteType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;favoriteValue"/>
+				<owl:onProperty rdf:resource="&xpil;favoriteValue"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -333,11 +333,11 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Fax">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;ContactNumber"/>
+	<owl:Class rdf:about="&xpil;Fax">
+		<rdfs:subClassOf rdf:resource="&xpil;ContactNumber"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;communicationMediaType"/>
+				<owl:onProperty rdf:resource="&xpil;communicationMediaType"/>
 				<owl:hasValue rdf:datatype="&xsd;string">Fax</owl:hasValue>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -346,22 +346,22 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Feature">
+	<owl:Class rdf:about="&xpil;Feature">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;featureDescription"/>
+				<owl:onProperty rdf:resource="&xpil;featureDescription"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;featureType"/>
+				<owl:onProperty rdf:resource="&xpil;featureType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;featureUnit"/>
+				<owl:onProperty rdf:resource="&xpil;featureUnit"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -370,16 +370,16 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;FreeFormPhysicalInfo">
+	<owl:Class rdf:about="&xpil;FreeFormPhysicalInfo">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;physicalInfoDescription"/>
+				<owl:onProperty rdf:resource="&xpil;physicalInfoDescription"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;physicalInfoType"/>
+				<owl:onProperty rdf:resource="&xpil;physicalInfoType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -388,16 +388,16 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Habit">
+	<owl:Class rdf:about="&xpil;Habit">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;habitType"/>
+				<owl:onProperty rdf:resource="&xpil;habitType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;habitValue"/>
+				<owl:onProperty rdf:resource="&xpil;habitValue"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -406,10 +406,10 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;HeatlhCondition">
+	<owl:Class rdf:about="&xpil;HeatlhCondition">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;healthConditionDescription"/>
+				<owl:onProperty rdf:resource="&xpil;healthConditionDescription"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -418,16 +418,16 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Hobby">
+	<owl:Class rdf:about="&xpil;Hobby">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;hobbyType"/>
+				<owl:onProperty rdf:resource="&xpil;hobbyType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;hobbyValue"/>
+				<owl:onProperty rdf:resource="&xpil;hobbyValue"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -436,77 +436,77 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;IdentificationCard">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;IdentificationDocument"/>
+	<owl:Class rdf:about="&xpil;IdentificationCard">
+		<rdfs:subClassOf rdf:resource="&xpil;IdentificationDocument"/>
 		<rdfs:label>Identification Card</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Defines an identification card document</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;IdentificationDocument">
+	<owl:Class rdf:about="&xpil;IdentificationDocument">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;accessCode"/>
+				<owl:onProperty rdf:resource="&xpil;accessCode"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;addressOnDocument"/>
+				<owl:onProperty rdf:resource="&xpil;addressOnDocument"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;documentCategory"/>
+				<owl:onProperty rdf:resource="&xpil;documentCategory"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;documentID"/>
+				<owl:onProperty rdf:resource="&xpil;documentID"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;groupName"/>
+				<owl:onProperty rdf:resource="&xpil;groupName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;identificationDocumentName"/>
+				<owl:onProperty rdf:resource="&xpil;identificationDocumentName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;identificationDocumentType"/>
+				<owl:onProperty rdf:resource="&xpil;identificationDocumentType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;issuePlace"/>
+				<owl:onProperty rdf:resource="&xpil;issuePlace"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;issuer"/>
+				<owl:onProperty rdf:resource="&xpil;issuer"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;nameOnDocument"/>
+				<owl:onProperty rdf:resource="&xpil;nameOnDocument"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;verificationCode"/>
+				<owl:onProperty rdf:resource="&xpil;verificationCode"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -515,28 +515,28 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Identifier">
+	<owl:Class rdf:about="&xpil;Identifier">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;identiferType"/>
+				<owl:onProperty rdf:resource="&xpil;identiferType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;identifierName"/>
+				<owl:onProperty rdf:resource="&xpil;identifierName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;issuer"/>
+				<owl:onProperty rdf:resource="&xpil;issuer"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;issuingCountry"/>
+				<owl:onProperty rdf:resource="&xpil;issuingCountry"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -545,53 +545,53 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;KeyCard">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;IdentificationDocument"/>
+	<owl:Class rdf:about="&xpil;KeyCard">
+		<rdfs:subClassOf rdf:resource="&xpil;IdentificationDocument"/>
 		<rdfs:label>Key Card</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Defines a Key Card identification document</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Language">
+	<owl:Class rdf:about="&xpil;Language">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;languageName"/>
+				<owl:onProperty rdf:resource="&xpil;languageName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;languagePreference"/>
+				<owl:onProperty rdf:resource="&xpil;languagePreference"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;languageType"/>
+				<owl:onProperty rdf:resource="&xpil;languageType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;readingSkill"/>
+				<owl:onProperty rdf:resource="&xpil;readingSkill"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;speakingSkill"/>
+				<owl:onProperty rdf:resource="&xpil;speakingSkill"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;understandingSkill"/>
+				<owl:onProperty rdf:resource="&xpil;understandingSkill"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;writingSkill"/>
+				<owl:onProperty rdf:resource="&xpil;writingSkill"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -600,40 +600,40 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Membership">
+	<owl:Class rdf:about="&xpil;Membership">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;holdingOrganization"/>
+				<owl:onProperty rdf:resource="&xpil;holdingOrganization"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;issuingCountry"/>
+				<owl:onProperty rdf:resource="&xpil;issuingCountry"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;membershipCategory"/>
+				<owl:onProperty rdf:resource="&xpil;membershipCategory"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;membershipName"/>
+				<owl:onProperty rdf:resource="&xpil;membershipName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;membershipNumber"/>
+				<owl:onProperty rdf:resource="&xpil;membershipNumber"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;membershipType"/>
+				<owl:onProperty rdf:resource="&xpil;membershipType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -642,17 +642,17 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;MileageProgram">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;IdentificationDocument"/>
+	<owl:Class rdf:about="&xpil;MileageProgram">
+		<rdfs:subClassOf rdf:resource="&xpil;IdentificationDocument"/>
 		<rdfs:label>Mileage Program</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Defines a mileage program identification document</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;NationalityStatement">
+	<owl:Class rdf:about="&xpil;NationalityStatement">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;nationalityType"/>
+				<owl:onProperty rdf:resource="&xpil;nationalityType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -661,52 +661,52 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Occupation">
+	<owl:Class rdf:about="&xpil;Occupation">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;costCenter"/>
+				<owl:onProperty rdf:resource="&xpil;costCenter"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;employer"/>
+				<owl:onProperty rdf:resource="&xpil;employer"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;employmentType"/>
+				<owl:onProperty rdf:resource="&xpil;employmentType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;occupationRole"/>
+				<owl:onProperty rdf:resource="&xpil;occupationRole"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;positionTitle"/>
+				<owl:onProperty rdf:resource="&xpil;positionTitle"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;rank"/>
+				<owl:onProperty rdf:resource="&xpil;rank"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;reportsTo"/>
+				<owl:onProperty rdf:resource="&xpil;reportsTo"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;selfEmployed"/>
+				<owl:onProperty rdf:resource="&xpil;selfEmployed"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -715,64 +715,64 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Organization">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;PartyBase"/>
+	<owl:Class rdf:about="&xpil;Organization">
+		<rdfs:subClassOf rdf:resource="&xpil;PartyBase"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.category"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.category"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.industryCodeType"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.industryCodeType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.industryType"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.industryType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.nature"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.nature"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.numberOfEmployees"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.numberOfEmployees"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.operatingHoursEndTime"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.operatingHoursEndTime"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.operatingHoursStartTime"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.operatingHoursStartTime"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.type"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.type"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:label>Organization</rdfs:label>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Pager">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;ContactNumber"/>
+	<owl:Class rdf:about="&xpil;Pager">
+		<rdfs:subClassOf rdf:resource="&xpil;ContactNumber"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;communicationMediaType"/>
+				<owl:onProperty rdf:resource="&xpil;communicationMediaType"/>
 				<owl:hasValue rdf:datatype="&xsd;string">Pager</owl:hasValue>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -781,143 +781,143 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Party">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;PartyBase"/>
+	<owl:Class rdf:about="&xpil;Party">
+		<rdfs:subClassOf rdf:resource="&xpil;PartyBase"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthDatePrecision"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthDatePrecision"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthDateTime"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthDateTime"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthPlace"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthPlace"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthPlaceDetails"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthPlaceDetails"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthSign"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthSign"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthStar"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthStar"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.category"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.category"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.industryCode"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.industryCode"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.industryCodeType"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.industryCodeType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.industryType"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.industryType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.nature"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.nature"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.numberOfEmployees"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.numberOfEmployees"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.operatingHoursEndTime"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.operatingHoursEndTime"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.operatingHoursStartTime"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.operatingHoursStartTime"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;organizationInfo.type"/>
+				<owl:onProperty rdf:resource="&xpil;organizationInfo.type"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.categoryType"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.categoryType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.ethnicity"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.ethnicity"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.gender"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.gender"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.maritalStatus"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.maritalStatus"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.physicalStatus"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.physicalStatus"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.religion"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.religion"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personlInfo.age"/>
+				<owl:onProperty rdf:resource="&xpil;personlInfo.age"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;physicalInfo.bloodGroup"/>
+				<owl:onProperty rdf:resource="&xpil;physicalInfo.bloodGroup"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -928,16 +928,16 @@ Party should be used in place of Person or Organization if it is unclear which i
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;PartyBase">
+	<owl:Class rdf:about="&xpil;PartyBase">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;description"/>
+				<owl:onProperty rdf:resource="&xpil;description"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;partyType"/>
+				<owl:onProperty rdf:resource="&xpil;partyType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -945,112 +945,112 @@ Party should be used in place of Person or Organization if it is unclear which i
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Passport">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;IdentificationDocument"/>
+	<owl:Class rdf:about="&xpil;Passport">
+		<rdfs:subClassOf rdf:resource="&xpil;IdentificationDocument"/>
 		<rdfs:label>Passport</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Defines Passport identification document</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Person">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;PartyBase"/>
+	<owl:Class rdf:about="&xpil;Person">
+		<rdfs:subClassOf rdf:resource="&xpil;PartyBase"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthDatePrecision"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthDatePrecision"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthDateTime"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthDateTime"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthPlace"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthPlace"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthPlaceDetails"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthPlaceDetails"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthSign"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthSign"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;birthInfo.birthStar"/>
+				<owl:onProperty rdf:resource="&xpil;birthInfo.birthStar"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.categoryType"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.categoryType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.ethnicity"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.ethnicity"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.gender"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.gender"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.maritalStatus"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.maritalStatus"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.physicalStatus"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.physicalStatus"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personInfo.religion"/>
+				<owl:onProperty rdf:resource="&xpil;personInfo.religion"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;personlInfo.age"/>
+				<owl:onProperty rdf:resource="&xpil;personlInfo.age"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;physicalInfo.bloodGroup"/>
+				<owl:onProperty rdf:resource="&xpil;physicalInfo.bloodGroup"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:label>Person</rdfs:label>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Preference">
+	<owl:Class rdf:about="&xpil;Preference">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;preferenceType"/>
+				<owl:onProperty rdf:resource="&xpil;preferenceType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;preferenceValue"/>
+				<owl:onProperty rdf:resource="&xpil;preferenceValue"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -1059,58 +1059,58 @@ Party should be used in place of Person or Organization if it is unclear which i
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Qualification">
+	<owl:Class rdf:about="&xpil;Qualification">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;award"/>
+				<owl:onProperty rdf:resource="&xpil;award"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;completionDate"/>
+				<owl:onProperty rdf:resource="&xpil;completionDate"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;courseDuration"/>
+				<owl:onProperty rdf:resource="&xpil;courseDuration"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;grade"/>
+				<owl:onProperty rdf:resource="&xpil;grade"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;institution"/>
+				<owl:onProperty rdf:resource="&xpil;institution"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;majorSubject"/>
+				<owl:onProperty rdf:resource="&xpil;majorSubject"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;minorSubject"/>
+				<owl:onProperty rdf:resource="&xpil;minorSubject"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;qualificationName"/>
+				<owl:onProperty rdf:resource="&xpil;qualificationName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;wayOfStudy"/>
+				<owl:onProperty rdf:resource="&xpil;wayOfStudy"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -1119,28 +1119,28 @@ Party should be used in place of Person or Organization if it is unclear which i
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;RelationshipStatement">
+	<owl:Class rdf:about="&xpil;RelationshipStatement">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;partyType"/>
+				<owl:onProperty rdf:resource="&xpil;partyType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;relationshipType"/>
+				<owl:onProperty rdf:resource="&xpil;relationshipType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;relationshipValidFromDate"/>
+				<owl:onProperty rdf:resource="&xpil;relationshipValidFromDate"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;relationshipValidToDate"/>
+				<owl:onProperty rdf:resource="&xpil;relationshipValidToDate"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -1150,10 +1150,10 @@ Party should be used in place of Person or Organization if it is unclear which i
 		<core:appIconId rdf:datatype="&xsd;string">dl:com.champtc.champ.ui.core.stix.relationship</core:appIconId>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;ResidencyStatement">
+	<owl:Class rdf:about="&xpil;ResidencyStatement">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;residencyType"/>
+				<owl:onProperty rdf:resource="&xpil;residencyType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -1162,58 +1162,58 @@ Party should be used in place of Person or Organization if it is unclear which i
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Revenue">
+	<owl:Class rdf:about="&xpil;Revenue">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;revenueAfterTax"/>
+				<owl:onProperty rdf:resource="&xpil;revenueAfterTax"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;revenueAmount"/>
+				<owl:onProperty rdf:resource="&xpil;revenueAmount"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;revenueCountry"/>
+				<owl:onProperty rdf:resource="&xpil;revenueCountry"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;revenueCurrencyCode"/>
+				<owl:onProperty rdf:resource="&xpil;revenueCurrencyCode"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;revenuePeriodFromDate"/>
+				<owl:onProperty rdf:resource="&xpil;revenuePeriodFromDate"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;revenuePeriodToDate"/>
+				<owl:onProperty rdf:resource="&xpil;revenuePeriodToDate"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;revenuePrecision"/>
+				<owl:onProperty rdf:resource="&xpil;revenuePrecision"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;revenueSource"/>
+				<owl:onProperty rdf:resource="&xpil;revenueSource"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;revenueType"/>
+				<owl:onProperty rdf:resource="&xpil;revenueType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -1222,40 +1222,40 @@ Party should be used in place of Person or Organization if it is unclear which i
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Stock">
+	<owl:Class rdf:about="&xpil;Stock">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;stockInvestedDate"/>
+				<owl:onProperty rdf:resource="&xpil;stockInvestedDate"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;stockListedDate"/>
+				<owl:onProperty rdf:resource="&xpil;stockListedDate"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;stockListingCountry"/>
+				<owl:onProperty rdf:resource="&xpil;stockListingCountry"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;stockMarketName"/>
+				<owl:onProperty rdf:resource="&xpil;stockMarketName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;stockShareQuantity"/>
+				<owl:onProperty rdf:resource="&xpil;stockShareQuantity"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;stockSymbol"/>
+				<owl:onProperty rdf:resource="&xpil;stockSymbol"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -1264,90 +1264,90 @@ Party should be used in place of Person or Organization if it is unclear which i
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Telephone">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;ContactNumber"/>
+	<owl:Class rdf:about="&xpil;Telephone">
+		<rdfs:subClassOf rdf:resource="&xpil;ContactNumber"/>
 		<rdfs:label>Telephone</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a Telephone as a communciation media</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;VOIP">
-		<rdfs:subClassOf rdf:resource="&ciq_xpil;ContactNumber"/>
+	<owl:Class rdf:about="&xpil;VOIP">
+		<rdfs:subClassOf rdf:resource="&xpil;ContactNumber"/>
 		<rdfs:label>VOIP</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a VOIP as a communication media</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Vehicle">
+	<owl:Class rdf:about="&xpil;Vehicle">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleBodyNumber"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleBodyNumber"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleBodyType"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleBodyType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleChassisNumber"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleChassisNumber"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleColor"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleColor"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleEngineNumber"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleEngineNumber"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleLicensePlateNumber"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleLicensePlateNumber"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleLicensePlateType"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleLicensePlateType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleMake"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleMake"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleManufactureDate"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleManufactureDate"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleModel"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleModel"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleName"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;vehicleType"/>
+				<owl:onProperty rdf:resource="&xpil;vehicleType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -1356,52 +1356,52 @@ Party should be used in place of Person or Organization if it is unclear which i
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&ciq_xpil;Visa">
+	<owl:Class rdf:about="&xpil;Visa">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;entryByDate"/>
+				<owl:onProperty rdf:resource="&xpil;entryByDate"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;visaCode"/>
+				<owl:onProperty rdf:resource="&xpil;visaCode"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;visaCountry"/>
+				<owl:onProperty rdf:resource="&xpil;visaCountry"/>
 				<owl:someValuesFrom rdf:resource="&owl;Thing"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;visaEntryType"/>
+				<owl:onProperty rdf:resource="&xpil;visaEntryType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;visaIssuePlace"/>
+				<owl:onProperty rdf:resource="&xpil;visaIssuePlace"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;visaMaximumStay"/>
+				<owl:onProperty rdf:resource="&xpil;visaMaximumStay"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;visaNumber"/>
+				<owl:onProperty rdf:resource="&xpil;visaNumber"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_xpil;visaType"/>
+				<owl:onProperty rdf:resource="&xpil;visaType"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -1410,79 +1410,79 @@ Party should be used in place of Person or Organization if it is unclear which i
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 	</owl:Class>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;accessCode">
+	<owl:DatatypeProperty rdf:about="&xpil;accessCode">
 		<rdfs:label>Access Code</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the access/security code of the document</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;accountBranch">
+	<owl:DatatypeProperty rdf:about="&xpil;accountBranch">
 		<rdfs:label>Branch</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the branch associated with the account</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;accountID">
+	<owl:DatatypeProperty rdf:about="&xpil;accountID">
 		<rdfs:label>Account ID</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the unique name, number, or mixed account identifier (e.g, bank account number).</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;accountName">
+	<owl:DatatypeProperty rdf:about="&xpil;accountName">
 		<rdfs:label>Account Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name of the account</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;accountNameType">
+	<owl:DatatypeProperty rdf:about="&xpil;accountNameType">
 		<rdfs:label>Account Name Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies commonly recognised names, such as IRD number (for NZ), SSN (for US), ABN (for AU), etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;accountType">
+	<owl:DatatypeProperty rdf:about="&xpil;accountType">
 		<rdfs:label>Account Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of account</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;accounts">
+	<owl:ObjectProperty rdf:about="&xpil;accounts">
 		<rdfs:label>Accounts</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the account details for the entity</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Account"/>
+		<rdfs:range rdf:resource="&xpil;Account"/>
 	</owl:ObjectProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;addressOnDocument">
+	<owl:ObjectProperty rdf:about="&xpil;addressOnDocument">
 		<rdfs:label>Address On Document</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies address details about the document</rdfs:comment>
 		<rdfs:range rdf:resource="http://www.oasis-open.org/ciq_xal#Address"/>
 	</owl:ObjectProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;addresses">
+	<owl:ObjectProperty rdf:about="&xpil;addresses">
 		<rdfs:label>Addresses</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more related addresses</rdfs:comment>
 		<rdfs:range rdf:resource="http://www.oasis-open.org/ciq_xal#Address"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;allergyName">
+	<owl:DatatypeProperty rdf:about="&xpil;allergyName">
 		<rdfs:label>Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies an allergy (e.g., allergic to pencillin, milk products)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;areaCode">
+	<owl:DatatypeProperty rdf:about="&xpil;areaCode">
 		<rdfs:label>Area Code</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the coded to dial an area within a country</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;positiveInteger"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;award">
+	<owl:DatatypeProperty rdf:about="&xpil;award">
 		<rdfs:label>Award</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the awarfe or distinction that was awarded to the graduate (e.g, honors)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;birthInfo.birthDatePrecision">
+	<owl:DatatypeProperty rdf:about="&xpil;birthInfo.birthDatePrecision">
 		<rdfs:label>Birth Date Precision</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the duration of the uncertainity period as a range where the value of the birth date and time  is in the middle of the range.  The time interval is in the format PnYnMnDTnHnMnS where P is period (required), nY is the number of years, nM is the number of months, nD is the number of days, T is the start of a time section (required if hours, minutes, or seconds are to be specified), nH is the number of hours, nM is the number of minutes, nS is the number of seconds.
 
@@ -1492,779 +1492,779 @@ P5Y2M10D = 5 years, 2 months, 10 days, and 15 hours</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;duration"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;birthInfo.birthDateTime">
+	<owl:DatatypeProperty rdf:about="&xpil;birthInfo.birthDateTime">
 		<rdfs:label>Birth Date and Time</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the birth date and time to the known precision.  Usually, it is only the date that is know.  Leave time as 00:00:00 if not known</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;dateTime"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;birthInfo.birthPlace">
+	<owl:DatatypeProperty rdf:about="&xpil;birthInfo.birthPlace">
 		<rdfs:label>Birth Place</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a free-form text description of the birth place (e.g., country name, region, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;birthInfo.birthPlaceDetails">
+	<owl:ObjectProperty rdf:about="&xpil;birthInfo.birthPlaceDetails">
 		<rdfs:label>Birth Place Details</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the full location details about the place of birth of a person.  The location may be required to get the exact geo-coordinates for astrology purposes.</rdfs:comment>
 		<rdfs:range rdf:resource="http://www.oasis-open.org/ciq_xal#Address"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;birthInfo.birthSign">
+	<owl:DatatypeProperty rdf:about="&xpil;birthInfo.birthSign">
 		<rdfs:label>Birth Sign</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the sign under which a person was born.  Specific to some cultures</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;birthInfo.birthStar">
+	<owl:DatatypeProperty rdf:about="&xpil;birthInfo.birthStar">
 		<rdfs:label>Birth Star</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the birth star under which a person was born.  Commonly used in some oriental cultures</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;bodyMarkDescription">
+	<owl:DatatypeProperty rdf:about="&xpil;bodyMarkDescription">
 		<rdfs:label>Description</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the free-form text description of the body mark</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;bodyPart">
+	<owl:DatatypeProperty rdf:about="&xpil;bodyPart">
 		<rdfs:label>Body Part</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a part of a person&apos;s body where the mark is located</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;cause">
+	<owl:DatatypeProperty rdf:about="&xpil;cause">
 		<rdfs:label>Cause</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a free-form description of the cause of the disability (e.g., birth defect, accident, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;communicationMediaType">
+	<owl:DatatypeProperty rdf:about="&xpil;communicationMediaType">
 		<rdfs:label>Media type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the communication media type used for contact purposes</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;completionDate">
+	<owl:DatatypeProperty rdf:about="&xpil;completionDate">
 		<rdfs:label>Completion Date</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a description of the date when the qualification was completed to the best know percision.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;contactHours">
+	<owl:DatatypeProperty rdf:about="&xpil;contactHours">
 		<rdfs:label>Contact Hours</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies free-form text expression of contact hours</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;contactNumberUsage">
+	<owl:DatatypeProperty rdf:about="&xpil;contactNumberUsage">
 		<rdfs:label>Usage</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the nature of the contact number (e.g., business, personal, free call, toll call, after hours)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;contactNumbers">
+	<owl:ObjectProperty rdf:about="&xpil;contactNumbers">
 		<rdfs:label>Contact Numbers</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more telecommunication lines of entity used for contact purposes.  Examples are phone, fax, mobile, pager, etc.</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;ContactNumber"/>
+		<rdfs:range rdf:resource="&xpil;ContactNumber"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;costCenter">
+	<owl:DatatypeProperty rdf:about="&xpil;costCenter">
 		<rdfs:label>Cost Center</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the commonly used identifier for accounting purposes</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;countriesOfResidence">
+	<owl:ObjectProperty rdf:about="&xpil;countriesOfResidence">
 		<rdfs:label>Countries of Residence</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more citizenships or residencies of a person</rdfs:comment>
 		<rdfs:range rdf:resource="http://www.oasis-open.org/ciq_xal#Country"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;countryCode">
+	<owl:DatatypeProperty rdf:about="&xpil;countryCode">
 		<rdfs:label>Country Code</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a code to dial to a country. (e.g., 1 for US, 44 for UK)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;positiveInteger"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;courseDuration">
+	<owl:DatatypeProperty rdf:about="&xpil;courseDuration">
 		<rdfs:label>Course Duration</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the duration of the course (e.g., 4 years, 1 month, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;description">
+	<owl:DatatypeProperty rdf:about="&xpil;description">
 		<rdfs:label>Description</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a free text description of the party</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;disabilityDescription">
+	<owl:DatatypeProperty rdf:about="&xpil;disabilityDescription">
 		<rdfs:label>Description</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a description of the disability</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;documentCategory">
+	<owl:DatatypeProperty rdf:about="&xpil;documentCategory">
 		<rdfs:label>Category</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the category of the document such as Don Type in License, Gold Card, Silver Card, Platinum Card, etc.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;documentID">
+	<owl:DatatypeProperty rdf:about="&xpil;documentID">
 		<rdfs:label>Document ID</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the number of the document, which can be alphanumeric</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;documents">
+	<owl:ObjectProperty rdf:about="&xpil;documents">
 		<rdfs:label>Identification Documents</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more identification documents and cards of the entity that are unique to the party</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;IdentificationDocument"/>
+		<rdfs:range rdf:resource="&xpil;IdentificationDocument"/>
 	</owl:ObjectProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;electronicAddressIdentifiers">
+	<owl:ObjectProperty rdf:about="&xpil;electronicAddressIdentifiers">
 		<rdfs:label>Electronic Address Identifiers</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more electronic addresses of a party (e.g., emali, chat, skype, etc.)</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;ElectronicAddress"/>
+		<rdfs:range rdf:resource="&xpil;ElectronicAddress"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;electronicAddressLabel">
+	<owl:DatatypeProperty rdf:about="&xpil;electronicAddressLabel">
 		<rdfs:label>Label</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the label associated with an electronic address.  An electronic address identifier is usually stored (and probably exchanged) in conjunction with a label which is typically displayed and the URL/electronic address identifier just links that label.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;electronicAddressType">
+	<owl:DatatypeProperty rdf:about="&xpil;electronicAddressType">
 		<rdfs:label>Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of the electronic address</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;electronicAddressUsage">
+	<owl:DatatypeProperty rdf:about="&xpil;electronicAddressUsage">
 		<rdfs:label>Usage</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the usage of the electronic address (e.g, business, personal)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;electronicAddressValue">
+	<owl:DatatypeProperty rdf:about="&xpil;electronicAddressValue">
 		<rdfs:label>Electronic Address Value</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name of the electronic address</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;employer">
+	<owl:ObjectProperty rdf:about="&xpil;employer">
 		<rdfs:label>Employer</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the organization to which the opportunity was associated</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Organization"/>
+		<rdfs:range rdf:resource="&xpil;Organization"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;employmentType">
+	<owl:DatatypeProperty rdf:about="&xpil;employmentType">
 		<rdfs:label>Employment Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of employment (e.g., full-time, part-time, temporary, contract, etc)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;entryByDate">
+	<owl:DatatypeProperty rdf:about="&xpil;entryByDate">
 		<rdfs:label>Entry By Date</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the date by which the person must enter</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;dateTime"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;eventDateTime">
+	<owl:DatatypeProperty rdf:about="&xpil;eventDateTime">
 		<rdfs:label>Event Date</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the exact date of the event.  For example, deceased date, company closed date, birth date of spouse, etc.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;dateTime"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;eventName">
+	<owl:DatatypeProperty rdf:about="&xpil;eventName">
 		<rdfs:label>Event Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a short description of the event</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;eventType">
+	<owl:DatatypeProperty rdf:about="&xpil;eventType">
 		<rdfs:label>Event Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of event (e.g., Anniversary.  If &quot;Anniversary&quot; is the type, then the text for the Event could be &quot;20th wedding anniversary&quot;).</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;events">
+	<owl:ObjectProperty rdf:about="&xpil;events">
 		<rdfs:label>Events</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more key events and dates of events for the party</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Event"/>
+		<rdfs:range rdf:resource="&xpil;Event"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;extension">
+	<owl:DatatypeProperty rdf:about="&xpil;extension">
 		<rdfs:label>Extension</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies an extension to the number that is usually handled by some PBX</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;favoriteType">
+	<owl:DatatypeProperty rdf:about="&xpil;favoriteType">
 		<rdfs:label>Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type or category of the favorite</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;favoriteValue">
+	<owl:DatatypeProperty rdf:about="&xpil;favoriteValue">
 		<rdfs:label>Description of favorite</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name or decription of the favorite for a person</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;favorites">
+	<owl:ObjectProperty rdf:about="&xpil;favorites">
 		<rdfs:label>Favorites</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more favorites of the person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Favorite"/>
+		<rdfs:range rdf:resource="&xpil;Favorite"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;featureDescription">
+	<owl:DatatypeProperty rdf:about="&xpil;featureDescription">
 		<rdfs:label>Feature Value</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the description of the feature</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;featureType">
+	<owl:DatatypeProperty rdf:about="&xpil;featureType">
 		<rdfs:label>Feature Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of the feature</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;featureUnit">
+	<owl:DatatypeProperty rdf:about="&xpil;featureUnit">
 		<rdfs:label>Measurement Unit</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the unit of measurement (e.g,.inches, feet, cm, meters, days, months, years, kgs, pounds, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;grade">
+	<owl:DatatypeProperty rdf:about="&xpil;grade">
 		<rdfs:label>Grade</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the grade (average, percentage) achieved with the qualification</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;groupName">
+	<owl:DatatypeProperty rdf:about="&xpil;groupName">
 		<rdfs:label>Group Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a name of a larger group that recognises this document or supports it.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;habitType">
+	<owl:DatatypeProperty rdf:about="&xpil;habitType">
 		<rdfs:label>Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type or category of the habit (e.g, sports, food, reading, etc.)  As an example, if &quot;Hot Drinks&quot; is the type, then the name of the habit could be &quot;Strong Black Coffee&quot;.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;habitValue">
+	<owl:DatatypeProperty rdf:about="&xpil;habitValue">
 		<rdfs:label>Description of habit</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name or description of a person&apos;s habit</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;habits">
+	<owl:ObjectProperty rdf:about="&xpil;habits">
 		<rdfs:label>Habits</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more habits of a person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Habit"/>
+		<rdfs:range rdf:resource="&xpil;Habit"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;healthConditionDescription">
+	<owl:DatatypeProperty rdf:about="&xpil;healthConditionDescription">
 		<rdfs:label>Health Condition</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the condition of health in terms of medical (e.g., healthy, diabetic, high blood pressure, high cholestrol, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;hobbies">
+	<owl:ObjectProperty rdf:about="&xpil;hobbies">
 		<rdfs:label>Hobbies</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more hobbies of a person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Hobby"/>
+		<rdfs:range rdf:resource="&xpil;Hobby"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;hobbyType">
+	<owl:DatatypeProperty rdf:about="&xpil;hobbyType">
 		<rdfs:label>Hobby Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type or categorry of the hobby (e.g., sports, traveling)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;hobbyValue">
+	<owl:DatatypeProperty rdf:about="&xpil;hobbyValue">
 		<rdfs:label>Description of Hobby</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name of the hobby</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;holdingOrganization">
+	<owl:ObjectProperty rdf:about="&xpil;holdingOrganization">
 		<rdfs:label>Holding Organization</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the  the organisation where the entity is held.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
-		<rdfs:range rdf:resource="&ciq_xpil;Organization"/>
+		<rdfs:range rdf:resource="&xpil;Organization"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;identiferType">
+	<owl:DatatypeProperty rdf:about="&xpil;identiferType">
 		<rdfs:label>Identifier Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of identifier</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;identificationDocumentName">
+	<owl:DatatypeProperty rdf:about="&xpil;identificationDocumentName">
 		<rdfs:label>Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a description of the identification document or part of it.  (e.g., VISA, MASTERCARD for credit cards)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;identificationDocumentType">
+	<owl:DatatypeProperty rdf:about="&xpil;identificationDocumentType">
 		<rdfs:label>Document Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of identification document (e.g., passport, driver licenses, credit cards, certifications, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;identifierName">
+	<owl:DatatypeProperty rdf:about="&xpil;identifierName">
 		<rdfs:label>Identifier Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name of the identifier</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;identifiers">
+	<owl:ObjectProperty rdf:about="&xpil;identifiers">
 		<rdfs:label>Identifiers</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more identifiers to recognise the party as customer identifier, social security number, tax number, etc.</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Identifier"/>
+		<rdfs:range rdf:resource="&xpil;Identifier"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;imageLink">
+	<owl:DatatypeProperty rdf:about="&xpil;imageLink">
 		<rdfs:label>Image Link</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a URL to an image associated with the party</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 		<rdfs:range rdf:resource="&xsd;anyURI"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;institution">
+	<owl:ObjectProperty rdf:about="&xpil;institution">
 		<rdfs:label>Institution</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the associated institution</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Organization"/>
+		<rdfs:range rdf:resource="&xpil;Organization"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;internationalNumber">
+	<owl:DatatypeProperty rdf:about="&xpil;internationalNumber">
 		<rdfs:label>International Number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a full international number is one line.  May include international access numbers.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;issuePlace">
+	<owl:DatatypeProperty rdf:about="&xpil;issuePlace">
 		<rdfs:label>Issue Place</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Sspecifies the place of issue of the document (e.g., Sydney, Australia)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;issuer">
+	<owl:ObjectProperty rdf:about="&xpil;issuer">
 		<rdfs:label>Issuing Organization</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the issuing organization</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Organization"/>
+		<rdfs:range rdf:resource="&xpil;Organization"/>
 	</owl:ObjectProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;issuingAuthority">
+	<owl:ObjectProperty rdf:about="&xpil;issuingAuthority">
 		<rdfs:label>Issuing Authority</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the organization that assigns and manages the account (e.g., bank, power supplier, etc.)</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Organization"/>
+		<rdfs:range rdf:resource="&xpil;Organization"/>
 	</owl:ObjectProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;issuingCountry">
+	<owl:ObjectProperty rdf:about="&xpil;issuingCountry">
 		<rdfs:label>Issuing Country</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the country that issued the entity</rdfs:comment>
 		<rdfs:range rdf:resource="http://www.oasis-open.org/ciq_xal#Country"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;languageName">
+	<owl:DatatypeProperty rdf:about="&xpil;languageName">
 		<rdfs:label>Language Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the language name</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;languagePreference">
+	<owl:DatatypeProperty rdf:about="&xpil;languagePreference">
 		<rdfs:label>Preference</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the preferred language of communication (e.g, read and/or write and/or speak)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;languageType">
+	<owl:DatatypeProperty rdf:about="&xpil;languageType">
 		<rdfs:label>Relationship to Language</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the relationship of the person with the language (e.g., mother tongue, by birth, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;languages">
+	<owl:ObjectProperty rdf:about="&xpil;languages">
 		<rdfs:label>Languages</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more language spoken by a person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Language"/>
+		<rdfs:range rdf:resource="&xpil;Language"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;localNumber">
+	<owl:DatatypeProperty rdf:about="&xpil;localNumber">
 		<rdfs:label>Local Number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the local number as would be used by other witin the same dialing area</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;locationOnBodyPart">
+	<owl:DatatypeProperty rdf:about="&xpil;locationOnBodyPart">
 		<rdfs:label>Part Location</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the location on the body parts where the marks are found</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;majorSubject">
+	<owl:DatatypeProperty rdf:about="&xpil;majorSubject">
 		<rdfs:label>Major Subject</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name of the major subject of the qualification</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;membershipCategory">
+	<owl:DatatypeProperty rdf:about="&xpil;membershipCategory">
 		<rdfs:label>Category</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the category of the membershp such as Gold, Silver, Platinum, etc.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;membershipGroupName">
+	<owl:DatatypeProperty rdf:about="&xpil;membershipGroupName">
 		<rdfs:label>Access to Group</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a larger group or alliance name the membership provides access to.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;membershipName">
+	<owl:DatatypeProperty rdf:about="&xpil;membershipName">
 		<rdfs:label>Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the descriptive name of the membership or part of it</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;membershipNumber">
+	<owl:DatatypeProperty rdf:about="&xpil;membershipNumber">
 		<rdfs:label>Membership Number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the membership identifier (e.g., membership number or some other type of ID)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;membershipPrivilege">
+	<owl:DatatypeProperty rdf:about="&xpil;membershipPrivilege">
 		<rdfs:label>Privilege</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a privilege that the member can enjoy as part of the membership (e.g., access to free events).</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;membershipRestriction">
+	<owl:DatatypeProperty rdf:about="&xpil;membershipRestriction">
 		<rdfs:label>Restriction</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a restriction that the membership imposes on the member (e.g., do not smoke).</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;membershipRole">
+	<owl:DatatypeProperty rdf:about="&xpil;membershipRole">
 		<rdfs:label>Role</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a role in membership for a person (e.g., secretary, President, treasurer)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;membershipType">
+	<owl:DatatypeProperty rdf:about="&xpil;membershipType">
 		<rdfs:label>Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of a membership (e.g., IEEE, Rifles Club)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;memberships">
+	<owl:ObjectProperty rdf:about="&xpil;memberships">
 		<rdfs:label>Memberships</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more memberships of a party with other organisations (e.g., industry groups)</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Membership"/>
+		<rdfs:range rdf:resource="&xpil;Membership"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;minorSubject">
+	<owl:DatatypeProperty rdf:about="&xpil;minorSubject">
 		<rdfs:label>Minor Subjhect</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name of a minor subject of the qualification</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;nameOnDocument">
+	<owl:DatatypeProperty rdf:about="&xpil;nameOnDocument">
 		<rdfs:label>Name on Document</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the party name as on the document if different from the main one</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;nationalNumber">
+	<owl:DatatypeProperty rdf:about="&xpil;nationalNumber">
 		<rdfs:label>National Number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies an area code with local number in one line.  May include national access numbers.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;nationalities">
+	<owl:ObjectProperty rdf:about="&xpil;nationalities">
 		<rdfs:label>Nationalities</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more nationalities of a person</rdfs:comment>
 		<rdfs:range rdf:resource="http://www.oasis-open.org/ciq_xal#Country"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;nationalityType">
+	<owl:DatatypeProperty rdf:about="&xpil;nationalityType">
 		<rdfs:label>Nationality Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of nationality (e.g., by birth, naturalization, citizen)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;occupationRole">
+	<owl:DatatypeProperty rdf:about="&xpil;occupationRole">
 		<rdfs:label>Role</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the actual role that person carries out</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;occupations">
+	<owl:ObjectProperty rdf:about="&xpil;occupations">
 		<rdfs:label>Occupations</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more occupations for a person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Occupation"/>
+		<rdfs:range rdf:resource="&xpil;Occupation"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;organizationInfo.category">
+	<owl:DatatypeProperty rdf:about="&xpil;organizationInfo.category">
 		<rdfs:label>Organization Category</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of category to which the organization belongs (e.g., club, association, company, vendor, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;organizationInfo.industryCode">
+	<owl:DatatypeProperty rdf:about="&xpil;organizationInfo.industryCode">
 		<rdfs:label>Industry Code</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the industry code or classification of an organization</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;organizationInfo.industryCodeType">
+	<owl:DatatypeProperty rdf:about="&xpil;organizationInfo.industryCodeType">
 		<rdfs:label>Industry Code Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of code used for the industry code</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;organizationInfo.industryType">
+	<owl:DatatypeProperty rdf:about="&xpil;organizationInfo.industryType">
 		<rdfs:label>Industry Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of industry of an organization (.e,g IT, Manufacturing, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;organizationInfo.nature">
+	<owl:DatatypeProperty rdf:about="&xpil;organizationInfo.nature">
 		<rdfs:label>Organization Nature</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the nature of the organization (e.g, Public limited, Commercial, Charty, Non-Commercial, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;organizationInfo.numberOfEmployees">
+	<owl:DatatypeProperty rdf:about="&xpil;organizationInfo.numberOfEmployees">
 		<rdfs:label>Number of Employees</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the size of the organization in terms of the number of employees</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;integer"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;organizationInfo.operatingHoursEndTime">
+	<owl:DatatypeProperty rdf:about="&xpil;organizationInfo.operatingHoursEndTime">
 		<rdfs:label>Operating End Time</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the hour at which an organization ends operations (e.g, 5:00pm)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;time"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;organizationInfo.operatingHoursStartTime">
+	<owl:DatatypeProperty rdf:about="&xpil;organizationInfo.operatingHoursStartTime">
 		<rdfs:label>Operating Start Time</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the hour at which an organization starts operations (e.g, 9:00am)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;time"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;organizationInfo.type">
+	<owl:DatatypeProperty rdf:about="&xpil;organizationInfo.type">
 		<rdfs:label>Organization Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of an organization (e.g., Company, Trust, Bank, Society, Club, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;ownership">
+	<owl:DatatypeProperty rdf:about="&xpil;ownership">
 		<rdfs:label>Ownership</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of ownership for the account (e.g., Joint, Individual, corporate, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;party">
+	<owl:ObjectProperty rdf:about="&xpil;party">
 		<rdfs:label>Party</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the party associated with the entity</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;PartyBase"/>
+		<rdfs:range rdf:resource="&xpil;PartyBase"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;partyType">
+	<owl:DatatypeProperty rdf:about="&xpil;partyType">
 		<rdfs:label>partyType</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of party the name line could mean.  For example, the type could be &quot;Unknown&quot;</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;person">
+	<owl:ObjectProperty rdf:about="&xpil;person">
 		<rdfs:label>Person</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Person"/>
+		<rdfs:range rdf:resource="&xpil;Person"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;personInfo.categoryType">
+	<owl:DatatypeProperty rdf:about="&xpil;personInfo.categoryType">
 		<rdfs:label>Person Category Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of category the person belongs (e.g., customer, employee, friend, prospect, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;personInfo.ethnicity">
+	<owl:DatatypeProperty rdf:about="&xpil;personInfo.ethnicity">
 		<rdfs:label>Ethnicity</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the ethnicity of a person (e.g, Asian, Chinese, African, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;personInfo.gender">
+	<owl:DatatypeProperty rdf:about="&xpil;personInfo.gender">
 		<rdfs:label>Gender</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the gender of a person</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;personInfo.maritalStatus">
+	<owl:DatatypeProperty rdf:about="&xpil;personInfo.maritalStatus">
 		<rdfs:label>Marital Status</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the marital status of a person (e.g., married, separated, divorced, separated, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;personInfo.physicalStatus">
+	<owl:DatatypeProperty rdf:about="&xpil;personInfo.physicalStatus">
 		<rdfs:label>Physical Status</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the status of the person (e.g., living, deceased, retired).  Specify the date of the status, such as death or retired as an Event</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;personInfo.religion">
+	<owl:DatatypeProperty rdf:about="&xpil;personInfo.religion">
 		<rdfs:label>Religion</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the religion of a person</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;personlInfo.age">
+	<owl:DatatypeProperty rdf:about="&xpil;personlInfo.age">
 		<rdfs:label>Age</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the the age of the person</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;integer"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;physicalInfo.allergies">
+	<owl:ObjectProperty rdf:about="&xpil;physicalInfo.allergies">
 		<rdfs:label>Allergies</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more allergies for an person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Allergy"/>
+		<rdfs:range rdf:resource="&xpil;Allergy"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;physicalInfo.bloodGroup">
+	<owl:DatatypeProperty rdf:about="&xpil;physicalInfo.bloodGroup">
 		<rdfs:label>Blood Group</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the person&apos;s blood group</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;physicalInfo.bodyMarks">
+	<owl:ObjectProperty rdf:about="&xpil;physicalInfo.bodyMarks">
 		<rdfs:label>Body Marks</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more body marks, such as scars, tatoos, spots</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;BodyMarks"/>
+		<rdfs:range rdf:resource="&xpil;BodyMarks"/>
 	</owl:ObjectProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;physicalInfo.disabilities">
+	<owl:ObjectProperty rdf:about="&xpil;physicalInfo.disabilities">
 		<rdfs:label>Disabilities</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a person&apos;s disabilities</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Disability"/>
+		<rdfs:range rdf:resource="&xpil;Disability"/>
 	</owl:ObjectProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;physicalInfo.features">
+	<owl:ObjectProperty rdf:about="&xpil;physicalInfo.features">
 		<rdfs:label>Physcial Features</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the physical features of a person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Feature"/>
+		<rdfs:range rdf:resource="&xpil;Feature"/>
 	</owl:ObjectProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;physicalInfo.healthConditions">
+	<owl:ObjectProperty rdf:about="&xpil;physicalInfo.healthConditions">
 		<rdfs:label>Health Conditions</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more conditions of health in terms of medical (e.g., Healthy, diabetic, high blood pressure, high cholestrol, etc.)</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;HeatlhCondition"/>
+		<rdfs:range rdf:resource="&xpil;HeatlhCondition"/>
 	</owl:ObjectProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;physicalInfo.otherInfo">
+	<owl:ObjectProperty rdf:about="&xpil;physicalInfo.otherInfo">
 		<rdfs:label>Any Physical Descriptions</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies additional physical information not covered by other properties</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;FreeFormPhysicalInfo"/>
+		<rdfs:range rdf:resource="&xpil;FreeFormPhysicalInfo"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;physicalInfoDescription">
+	<owl:DatatypeProperty rdf:about="&xpil;physicalInfoDescription">
 		<rdfs:label>Physical Info Description</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a description of the physical observation</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;physicalInfoType">
+	<owl:DatatypeProperty rdf:about="&xpil;physicalInfoType">
 		<rdfs:label>Physical Info Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the category or type of the physical information</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;pin">
+	<owl:DatatypeProperty rdf:about="&xpil;pin">
 		<rdfs:label>Pin</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a personal access number (e.g., special access code)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;positionTitle">
+	<owl:DatatypeProperty rdf:about="&xpil;positionTitle">
 		<rdfs:label>Title of Position</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the actual title of the position</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;preferenceType">
+	<owl:DatatypeProperty rdf:about="&xpil;preferenceType">
 		<rdfs:label>Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of preference (e.g., seating position)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;preferenceValue">
+	<owl:DatatypeProperty rdf:about="&xpil;preferenceValue">
 		<rdfs:label>Description of preference</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the descriptive name of the preference</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;preferences">
+	<owl:ObjectProperty rdf:about="&xpil;preferences">
 		<rdfs:label>Preferences</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more preferences of a person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Preference"/>
+		<rdfs:range rdf:resource="&xpil;Preference"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;privilege">
+	<owl:DatatypeProperty rdf:about="&xpil;privilege">
 		<rdfs:label>Privilege</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a privilege the holder of the doucment was granted. (e.g., security access level)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;qualificationName">
+	<owl:DatatypeProperty rdf:about="&xpil;qualificationName">
 		<rdfs:label>Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the free-form text name of the qualification</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;qualificationRestriction">
+	<owl:DatatypeProperty rdf:about="&xpil;qualificationRestriction">
 		<rdfs:label>Restriction</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies any restrictions imposed on the graduate (e.g., not valid before completion of 2 year practical work under supervision)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;qualifications">
+	<owl:ObjectProperty rdf:about="&xpil;qualifications">
 		<rdfs:label>Qualifications</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more qualifications for a person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Qualification"/>
+		<rdfs:range rdf:resource="&xpil;Qualification"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;rank">
+	<owl:DatatypeProperty rdf:about="&xpil;rank">
 		<rdfs:label>Rank</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a rank in some ranking system (e.g., private, major, supintendant, Justic, etc.).  This is different from role</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;readingSkill">
+	<owl:DatatypeProperty rdf:about="&xpil;readingSkill">
 		<rdfs:label>Reading Skill</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the person&apos;s ability to read the langauge</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;registration">
+	<owl:DatatypeProperty rdf:about="&xpil;registration">
 		<rdfs:label>Registration</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies details of any professional registration if required for practicing (e.g., for pharmacists, electricans, medical professionals)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;relationshipName">
+	<owl:DatatypeProperty rdf:about="&xpil;relationshipName">
 		<rdfs:label>Relationship Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a fully descriptive name of the relationship</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;relationshipType">
+	<owl:DatatypeProperty rdf:about="&xpil;relationshipType">
 		<rdfs:label>Relationship Type with Person</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of relationship.
 
@@ -2272,355 +2272,355 @@ If the party is a person, then the type of relationship with the person such as 
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;relationshipValidFromDate">
+	<owl:DatatypeProperty rdf:about="&xpil;relationshipValidFromDate">
 		<rdfs:label>Valid From</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the date when the relationship began</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;dateTime"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;relationshipValidToDate">
+	<owl:DatatypeProperty rdf:about="&xpil;relationshipValidToDate">
 		<rdfs:label>Valid To</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the date when the relationship ended</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;dateTime"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;relationships">
+	<owl:ObjectProperty rdf:about="&xpil;relationships">
 		<rdfs:label>Relationships</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more relationships with other parties (persons or organizations, and the nature of relationship).  Can also use this to define an organization hierarchy (parent and subsidiary organizations or branches/groups of organizations)</rdfs:comment>
 		<rdfs:range>
 			<owl:Class>
 				<owl:unionOf rdf:parseType="Collection">
-					<rdf:Description rdf:about="&ciq_xpil;Organization">
+					<rdf:Description rdf:about="&xpil;Organization">
 					</rdf:Description>
-					<rdf:Description rdf:about="&ciq_xpil;Party">
+					<rdf:Description rdf:about="&xpil;Party">
 					</rdf:Description>
-					<rdf:Description rdf:about="&ciq_xpil;Person">
+					<rdf:Description rdf:about="&xpil;Person">
 					</rdf:Description>
 				</owl:unionOf>
 			</owl:Class>
 		</rdfs:range>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;reportsTo">
+	<owl:DatatypeProperty rdf:about="&xpil;reportsTo">
 		<rdfs:label>Reports To</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name, role, or position who the peson reports to</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;residencyType">
+	<owl:DatatypeProperty rdf:about="&xpil;residencyType">
 		<rdfs:label>Residency Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of residency (e.g., permanent, citizen, temporary)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;restriction">
+	<owl:DatatypeProperty rdf:about="&xpil;restriction">
 		<rdfs:label>Restriction</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a restriction imposed on the holder of the document. (e.g., learners license)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;revenueAfterTax">
+	<owl:DatatypeProperty rdf:about="&xpil;revenueAfterTax">
 		<rdfs:label>After Tax</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies whether the income/revenue is after tax.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;boolean"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;revenueAmount">
+	<owl:DatatypeProperty rdf:about="&xpil;revenueAmount">
 		<rdfs:label>Revenue Amount</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the amount of revenue</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;decimal"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;revenueCountry">
+	<owl:ObjectProperty rdf:about="&xpil;revenueCountry">
 		<rdfs:label>Country</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the country from where the revenue is generated</rdfs:comment>
 		<rdfs:range rdf:resource="http://www.oasis-open.org/ciq_xal#Country"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;revenueCurrencyCode">
+	<owl:DatatypeProperty rdf:about="&xpil;revenueCurrencyCode">
 		<rdfs:label>Currency Code</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the three-letter currency code per ISO-4217</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;revenuePeriodFromDate">
+	<owl:DatatypeProperty rdf:about="&xpil;revenuePeriodFromDate">
 		<rdfs:label>Reporting Period Beginning</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the beginning of the reporting period, inclusively</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;dateTime"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;revenuePeriodToDate">
+	<owl:DatatypeProperty rdf:about="&xpil;revenuePeriodToDate">
 		<rdfs:label>Reporting Period End</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the ending of the reporting period, inclusively</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;dateTime"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;revenuePrecision">
+	<owl:DatatypeProperty rdf:about="&xpil;revenuePrecision">
 		<rdfs:label>Precision</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the precision range where the value of the element is in the middle of the range</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;decimal"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;revenueSource">
+	<owl:DatatypeProperty rdf:about="&xpil;revenueSource">
 		<rdfs:label>Source</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the source from where the revenue/income comes from (e.g., business stream, activity, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;revenueType">
+	<owl:DatatypeProperty rdf:about="&xpil;revenueType">
 		<rdfs:label>Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of the revenue/income.  Examples are Total Earnings, Profit, Loss, Turnover</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;revenues">
+	<owl:ObjectProperty rdf:about="&xpil;revenues">
 		<rdfs:label>Revenues</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more income/revenue information of the party</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Revenue"/>
+		<rdfs:range rdf:resource="&xpil;Revenue"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;selfEmployed">
+	<owl:DatatypeProperty rdf:about="&xpil;selfEmployed">
 		<rdfs:label>Self-Employed</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies if the party was self-employed during this occupation</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;boolean"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;separator">
+	<owl:DatatypeProperty rdf:about="&xpil;separator">
 		<rdfs:label>Separator</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies any text that is not part of the phone number, but has some informational content.  (e.g., Ext.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;speakingSkill">
+	<owl:DatatypeProperty rdf:about="&xpil;speakingSkill">
 		<rdfs:label>Speaking Skill</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the person&apos;s ability to speak the langauge</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;stockInvestedDate">
+	<owl:DatatypeProperty rdf:about="&xpil;stockInvestedDate">
 		<rdfs:label>Investment Date</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the date of investment in the stock</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;dateTime"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;stockListedDate">
+	<owl:DatatypeProperty rdf:about="&xpil;stockListedDate">
 		<rdfs:label>Listing Date</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the date the stock was listed on the exchange</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;dateTime"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;stockListingCountry">
+	<owl:ObjectProperty rdf:about="&xpil;stockListingCountry">
 		<rdfs:label>Listing Country</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the county where the stock is listed</rdfs:comment>
 		<rdfs:range rdf:resource="http://www.oasis-open.org/ciq_xal#Country"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;stockMarketName">
+	<owl:DatatypeProperty rdf:about="&xpil;stockMarketName">
 		<rdfs:label>Market Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name of the stock exchange or other market (e.g., NYSE, NZW)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;stockShareQuantity">
+	<owl:DatatypeProperty rdf:about="&xpil;stockShareQuantity">
 		<rdfs:label>Quantity of Shares</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the quantity of stock shares</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;positiveInteger"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;stockSymbol">
+	<owl:DatatypeProperty rdf:about="&xpil;stockSymbol">
 		<rdfs:label>Symbol</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the stock market symbol as listed on the exchange (e.g., MOT for Motorola Inc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;stocks">
+	<owl:ObjectProperty rdf:about="&xpil;stocks">
 		<rdfs:label>Stocks</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more stocks investments for the party</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Stock"/>
+		<rdfs:range rdf:resource="&xpil;Stock"/>
 	</owl:ObjectProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;subdivision">
+	<owl:ObjectProperty rdf:about="&xpil;subdivision">
 		<rdfs:label>Subdivisions</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the subdivisions of an organization</rdfs:comment>
 		<rdfs:range rdf:resource="http://www.oasis-open.org/ciq_xnl#Subdivison"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;understandingSkill">
+	<owl:DatatypeProperty rdf:about="&xpil;understandingSkill">
 		<rdfs:label>Understanding Skill</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the person&apos;s ability to understand the langauge</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleBodyNumber">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleBodyNumber">
 		<rdfs:label>Body Number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the body number of the vehicle</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleBodyType">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleBodyType">
 		<rdfs:label>Body Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of body (e.g., Sedan, Ute, Station Wagon, 2 door)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleChassisNumber">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleChassisNumber">
 		<rdfs:label>Chassis Number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the vehicle&apos;s chassis number</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleColor">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleColor">
 		<rdfs:label>Color</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the color of the vehicle</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleEngineNumber">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleEngineNumber">
 		<rdfs:label>Engine Number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the vehicle&apos;s engine number</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleLicensePlateNumber">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleLicensePlateNumber">
 		<rdfs:label>License Plate Number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the vehicle&apos;s license plate number</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleLicensePlateType">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleLicensePlateType">
 		<rdfs:label>License Plate Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the vehicle&apos;s license plate type (e.g., standard, premier, diplomat, etc)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleMake">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleMake">
 		<rdfs:label>Make</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the vehicle&apos;s make (e.g., Ford, Toyota)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleManufactureDate">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleManufactureDate">
 		<rdfs:label>Manufacture Date</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the vehicle&apos;s date of manufacture, which could be a full date or a year</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleModel">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleModel">
 		<rdfs:label>Model</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the vehicle&apos;s model (e.g., Pajero, Falcon, Volt).  If it includes make, then do not put the make as a separate element.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleName">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleName">
 		<rdfs:label>Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the make and model of the vehicle</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;vehicleType">
+	<owl:DatatypeProperty rdf:about="&xpil;vehicleType">
 		<rdfs:label>Vehicle Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of the vehicle (e.g., Motorbike, Truck, Car, Bicycle, 4WD, Jeep, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;vehicles">
+	<owl:ObjectProperty rdf:about="&xpil;vehicles">
 		<rdfs:label>Vehicles</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more vehicles of the party</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Vehicle"/>
+		<rdfs:range rdf:resource="&xpil;Vehicle"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;verificationCode">
+	<owl:DatatypeProperty rdf:about="&xpil;verificationCode">
 		<rdfs:label>Verification Code</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a verification/secure code as used in credit cards</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;visaCode">
+	<owl:DatatypeProperty rdf:about="&xpil;visaCode">
 		<rdfs:label>Code</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a Visa&apos;s code number (e.g, B1, E3, H-1, Class X1)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;visaCountry">
+	<owl:ObjectProperty rdf:about="&xpil;visaCountry">
 		<rdfs:label>Country</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the country for which the visa is issued to</rdfs:comment>
 		<rdfs:range rdf:resource="http://www.oasis-open.org/ciq_xal#Country"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;visaEntryType">
+	<owl:DatatypeProperty rdf:about="&xpil;visaEntryType">
 		<rdfs:label>Entry Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the entry type (e.g., Single Entry, Multiple Entry, Double Entry, etc)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;visaIssuePlace">
+	<owl:DatatypeProperty rdf:about="&xpil;visaIssuePlace">
 		<rdfs:label>Place Issued</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the place where the visa was issued (e.g., country name and office name, or country name and city).  For example US Embassy, Prague, Australia, Sydney.</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;visaMaximumStay">
+	<owl:DatatypeProperty rdf:about="&xpil;visaMaximumStay">
 		<rdfs:label>Maximum Stay</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the length of maximum stay (e.g., 1 week, 2 months, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;visaName">
+	<owl:DatatypeProperty rdf:about="&xpil;visaName">
 		<rdfs:label>Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a fully-described visa identification which includes visa&apos;s code and number</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;visaNumber">
+	<owl:DatatypeProperty rdf:about="&xpil;visaNumber">
 		<rdfs:label>Number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the visa&apos;s number</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;visaPrivilege">
+	<owl:DatatypeProperty rdf:about="&xpil;visaPrivilege">
 		<rdfs:label>Privilege</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies any privileges granted to the visa holder (e.g, depature fee waived, etc)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;visaRestriction">
+	<owl:DatatypeProperty rdf:about="&xpil;visaRestriction">
 		<rdfs:label>Restriction</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies any restrictions imposed on the visa holder (e.g., not for employment, cannot work for more than 20 hours)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;visaSpecialCondition">
+	<owl:DatatypeProperty rdf:about="&xpil;visaSpecialCondition">
 		<rdfs:label>Special Conditions</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies any special conditions imposed on the visit holder (e.g., not allowed to work for more than 10 hours a week)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;visaType">
+	<owl:DatatypeProperty rdf:about="&xpil;visaType">
 		<rdfs:label>Type</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the type of visa. e.g. Tourist, Visitor, Student</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:ObjectProperty rdf:about="&ciq_xpil;visas">
+	<owl:ObjectProperty rdf:about="&xpil;visas">
 		<rdfs:label>Visas</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies one or more visas helpd by the person</rdfs:comment>
-		<rdfs:range rdf:resource="&ciq_xpil;Visa"/>
+		<rdfs:range rdf:resource="&xpil;Visa"/>
 	</owl:ObjectProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;wayOfStudy">
+	<owl:DatatypeProperty rdf:about="&xpil;wayOfStudy">
 		<rdfs:label>Way of Study</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a way of study (e.g., full time, part time, evening classes, extramural, etc.)</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;website">
+	<owl:DatatypeProperty rdf:about="&xpil;website">
 		<rdfs:label>Website</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the URL of the organization&apos;s main webstie</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
 		<rdfs:range rdf:resource="&xsd;anyURI"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_xpil;writingSkill">
+	<owl:DatatypeProperty rdf:about="&xpil;writingSkill">
 		<rdfs:label>Writing Skill</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the person&apos;s ability to write the langauge</rdfs:comment>
 		<rdfs:range rdf:resource="&xsd;string"/>

@@ -21,8 +21,8 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="http://stix.mitre.org/Report">
-		<rdfs:label>STIX Report Ontology</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (STIX) Report.  The Report ontology provides a characterization of the context to a given grouping of STIX content.</rdfs:comment>
+		<rdfs:label>stix Report Ontology</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (stix) Report.  The Report ontology provides a characterization of the context to a given grouping of stix content.</rdfs:comment>
 		<owl:imports rdf:resource="http://cybox.mitre.org/cybox_core"/>
 		<owl:imports rdf:resource="http://data-marking.mitre.org/Data_Marking"/>
 		<owl:imports rdf:resource="http://stix.mitre.org/stixCommon"/>
@@ -33,7 +33,7 @@
 	<owl:Class rdf:about="&report;Report">
 		<rdfs:subClassOf rdf:resource="http://stix.mitre.org/stixCommon#ReportBase"/>
 		<rdfs:label>Report</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">Characterizes a contextual wrapper for a given group of STIX content.</rdfs:comment>
+		<rdfs:comment rdf:datatype="&xsd;string">Characterizes a contextual wrapper for a given group of stix content.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Report"/>
 		<core:appIconId rdf:datatype="&xsd;string">dl:com.champtc.champ.ui.core.stix.report</core:appIconId>
 	</owl:Class>

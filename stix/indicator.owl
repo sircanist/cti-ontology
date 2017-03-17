@@ -21,10 +21,10 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="http://stix.mitre.org/Indicator">
-		<rdfs:label>STIX Indicator Ontology</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (STIX) Indicator.  The STIX Indicator ontology provides a characterization of a single STIX Indicator.
+		<rdfs:label>stix Indicator Ontology</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (stix) Indicator.  The stix Indicator ontology provides a characterization of a single stix Indicator.
 
-A STIX Indicator conveys specific Observable patterns combined with contextual information intended to represent artifacts and/or behaviors of interest within a cyber security context. They consist of one or more Observable patterns potentially mapped to a related TTP context and adorned with other relevant metadata on things like confidence in the indicator’s assertion, handling restrictions, valid time windows, likely impact, sightings of the indicator, structured test mechanisms for detection, related campaigns, suggested courses of action, related indicators, the source of the Indicator, etc. Recognizing limitations in current standardized approaches of representation, STIX leverages community knowledge and best practices to define a new Indicator structure for representing Indicator information.</rdfs:comment>
+A stix Indicator conveys specific Observable patterns combined with contextual information intended to represent artifacts and/or behaviors of interest within a cyber security context. They consist of one or more Observable patterns potentially mapped to a related TTP context and adorned with other relevant metadata on things like confidence in the indicator’s assertion, handling restrictions, valid time windows, likely impact, sightings of the indicator, structured test mechanisms for detection, related campaigns, suggested courses of action, related indicators, the source of the Indicator, etc. Recognizing limitations in current standardized approaches of representation, stix leverages community knowledge and best practices to define a new Indicator structure for representing Indicator information.</rdfs:comment>
 		<owl:imports rdf:resource="http://data-marking.mitre.org/Data_Marking"/>
 		<owl:imports rdf:resource="http://ioc.mandiant.com/IoC"/>
 		<owl:imports rdf:resource="http://stix.mitre.org/stixCommon"/>
@@ -109,9 +109,9 @@ A STIX Indicator conveys specific Observable patterns combined with contextual i
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:label>Indicator</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">Characterizes a single STIX Indicator.
+		<rdfs:comment rdf:datatype="&xsd;string">Characterizes a single stix Indicator.
 
-A STIX Indicator characterizes a cyber threat indicator by capturing an asserted relationship between a pattern identifying certain observable conditions and a particular TTP likely in play if those observable conditions are seen, as well as contextual information about how and when it should be acted on and how it relates to other Indicators, Campaigns, and TTPs.
+A stix Indicator characterizes a cyber threat indicator by capturing an asserted relationship between a pattern identifying certain observable conditions and a particular TTP likely in play if those observable conditions are seen, as well as contextual information about how and when it should be acted on and how it relates to other Indicators, Campaigns, and TTPs.
 
 Indicators convey specific Observable patterns combined with contextual information intended to represent artifacts and/or behaviors of interest within a cyber security context. They consist of one or more Observable patterns potentially mapped to a related TTP context and adorned with other relevant metadata on things like confidence in the indicator’s assertion, handling restrictions, valid time windows, likely impact, sightings of the indicator, structured test mechanisms for detection, related campaigns, suggested courses of action, related indicators, the source of the Indicator, etc.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Indicator"/>
@@ -244,7 +244,7 @@ An Indicator sighting report may capture a variety of information associated wit
 
 The TestMechanism class is an abstract class, so it MUST be extended via a subclass to enable the expression of any structured or unstructured test mechanism.
 
-Test mechanisms may be different for different use cases. For example, one consumer may routinely rely on Snort signatures while another uses Yara rules and OVAL definitions. Individual test mechanisms are intended to test for the same conditions as the Observable (CybOX) patterns; however, STIX does not enforce equivalency.</rdfs:comment>
+Test mechanisms may be different for different use cases. For example, one consumer may routinely rely on Snort signatures while another uses Yara rules and OVAL definitions. Individual test mechanisms are intended to test for the same conditions as the Observable (CybOX) patterns; however, stix does not enforce equivalency.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Indicator"/>
 	</owl:Class>
 	
@@ -489,6 +489,10 @@ If the tool has a CPE name, use of that name is suggested, otherwise a simple na
 	</owl:DatatypeProperty>
 	
 	<owl:DatatypeProperty rdf:about="&indicator;rateFilter">
+		<rdfs:label>Rate Filter</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">Specifies a Snort rate filter line in its native format. The specification should be within a CDATA construct. .</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Indicator"/>
+		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
 	<owl:DatatypeProperty rdf:about="&indicator;reference">
@@ -534,9 +538,17 @@ If the tool has a CPE name, use of that name is suggested, otherwise a simple na
 	</owl:DatatypeProperty>
 	
 	<owl:DatatypeProperty rdf:about="&indicator;snortRule">
-	</owl:DatatypeProperty>
+		<rdfs:label>Snort Rule</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">Specifies a Snort rule in its native format. The specification should be within a CDATA construct.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Indicator"/>
+		<rdfs:range rdf:resource="&xsd;string"/>
+	</owl:DatatypeProperty> 
 	
 	<owl:DatatypeProperty rdf:about="&indicator;specification">
+		<rdfs:label>Snort Rule</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">Specifies any test mechnism specification in its native format. The specification should be within a CDATA construct. </rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Indicator"/>
+		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
 	<owl:ObjectProperty rdf:about="&indicator;suggestedCOAs">
@@ -596,6 +608,10 @@ If the tool has a CPE name, use of that name is suggested, otherwise a simple na
 	</owl:DatatypeProperty>
 	
 	<owl:DatatypeProperty rdf:about="&indicator;yaraRule">
+		<rdfs:label>Yara Rule</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">Specifies a YARA rule in its native format. The specification should be within a CDATA construct. .</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Indicator"/>
+		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 
 </rdf:RDF>

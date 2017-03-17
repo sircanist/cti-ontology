@@ -261,6 +261,10 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 	</owl:DatatypeProperty>
 	
 	<owl:DatatypeProperty rdf:about="&dnsObj;description">
+		<rdfs:label>description</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">Specifies a structured text description of this DNS_Entry</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://cybox.mitre.org/objects/DNS"/>
+		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
 	<owl:ObjectProperty rdf:about="&dnsObj;dnsCacheEntries">

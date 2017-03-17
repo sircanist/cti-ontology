@@ -16,9 +16,9 @@
         <owl:imports rdf:resource="http://www.oasis-open.org/ciq_common"/>
         <owl:imports rdf:resource="http://stix.mitre.org/stixCommon"/>
         <owl:imports rdf:resource="http://cybox.mitre.org/cybox_core"/>
-        <rdfs:label>STIX Core Ontology</rdfs:label>
+        <rdfs:label>stix Core Ontology</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.0-000</owl:versionInfo>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology specifies the STIX Package, which corresponds to the primary structure for bundling of information characterizes in Structured Threat Information eXpression (STIX). A STIX Package is used to bundle the various objects of the other eight top-level STIX components.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology specifies the stix Package, which corresponds to the primary structure for bundling of information characterizes in Structured Threat Information eXpression (stix). A stix Package is used to bundle the various objects of the other eight top-level stix components.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -169,7 +169,7 @@
 
     <owl:DatatypeProperty rdf:about="http://stix.mitre.org/stix_core#packageIntent">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specifies the intended purpose(s) or use(s) for this package of STIX content.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specifies the intended purpose(s) or use(s) for this package of stix content.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/stix_core"/>
         <rdfs:label>Package Intent</rdfs:label>
     </owl:DatatypeProperty>
@@ -180,7 +180,7 @@
 
     <owl:DatatypeProperty rdf:about="http://stix.mitre.org/stix_core#profiles">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specifies a list of profiles that the STIX Package conforms to.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specifies a list of profiles that the stix Package conforms to.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/stix_core"/>
         <rdfs:label>Profiles</rdfs:label>
     </owl:DatatypeProperty>
@@ -230,7 +230,7 @@ If not specified, a value of &quot;exclusive&quot; is used as the default.</rdfs
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characterizes a bundle of information characterized in the Structured Threat Information eXpression (STIX) language.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characterizes a bundle of information characterized in the Structured Threat Information eXpression (stix) language.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/stix_core"/>
         <rdfs:label>Package</rdfs:label>
     </owl:Class>

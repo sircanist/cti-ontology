@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE rdf:RDF [
-	<!ENTITY ciq_curr "http://www.oasis-open.org/ciq_currency#">
+	<!ENTITY xcl "http://www.oasis-open.org/ciq_currency#">
 	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
 	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
@@ -8,7 +8,7 @@
 ]>
 <rdf:RDF
 	xmlns="http://www.oasis-open.org/ciq_currency#"
-	xmlns:ciq_curr="http://www.oasis-open.org/ciq_currency#"
+	xmlns:xcl="http://www.oasis-open.org/ciq_currency#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -23,28 +23,28 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<owl:versionInfo rdf:datatype="&xsd;string">1.0.0-000</owl:versionInfo>
 	</owl:Ontology>
 	
-	<owl:Class rdf:about="&ciq_curr;Currency">
+	<owl:Class rdf:about="&xcl;Currency">
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_curr;currencyName"/>
+				<owl:onProperty rdf:resource="&xcl;currencyName"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_curr;currencySymbol"/>
+				<owl:onProperty rdf:resource="&xcl;currencySymbol"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_curr;isoCurrencyCode"/>
+				<owl:onProperty rdf:resource="&xcl;isoCurrencyCode"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&ciq_curr;isoNumericCurrencyCode"/>
+				<owl:onProperty rdf:resource="&xcl;isoNumericCurrencyCode"/>
 				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -53,35 +53,35 @@ Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_currency"/>
 	</owl:Class>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_curr;currencyName">
+	<owl:DatatypeProperty rdf:about="&xcl;currencyName">
 		<rdfs:label>Currency Name</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the name of the currency</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_currency"/>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_curr;currencySymbol">
+	<owl:DatatypeProperty rdf:about="&xcl;currencySymbol">
 		<rdfs:label>currency symbol</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the symbol associated with the curency</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_currency"/>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_curr;currencySymbolCodes">
+	<owl:DatatypeProperty rdf:about="&xcl;currencySymbolCodes">
 		<rdfs:label>Currency Symbol Codes</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the currency symbol as a sequence of one or more comma-separated unicode hex values</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_currency"/>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_curr;isoCurrencyCode">
+	<owl:DatatypeProperty rdf:about="&xcl;isoCurrencyCode">
 		<rdfs:label>ISO 4217 Currency Code</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the 3-character currency code per ISO 4217</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_currency"/>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
 	
-	<owl:DatatypeProperty rdf:about="&ciq_curr;isoNumericCurrencyCode">
+	<owl:DatatypeProperty rdf:about="&xcl;isoNumericCurrencyCode">
 		<rdfs:label>iso numeric currency code</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies the three-digit numerica code per ISO 4217.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://www.oasis-open.org/ciq_currency"/>
