@@ -7,6 +7,7 @@
 	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
 	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
 ]>
+
 <rdf:RDF
 	xmlns="http://www.oasis-open.org/ciq_xpil#"
 	xmlns:xpil="http://www.oasis-open.org/ciq_xpil#"
