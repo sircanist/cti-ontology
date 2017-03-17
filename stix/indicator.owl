@@ -542,11 +542,11 @@ If the tool has a CPE name, use of that name is suggested, otherwise a simple na
 		<rdfs:comment rdf:datatype="&xsd;string">Specifies a Snort rule in its native format. The specification should be within a CDATA construct.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Indicator"/>
 		<rdfs:range rdf:resource="&xsd;string"/>
-	</owl:DatatypeProperty> 
+	</owl:DatatypeProperty>
 	
 	<owl:DatatypeProperty rdf:about="&indicator;specification">
 		<rdfs:label>Snort Rule</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">Specifies any test mechnism specification in its native format. The specification should be within a CDATA construct. </rdfs:comment>
+		<rdfs:comment rdf:datatype="&xsd;string">Specifies any test mechnism specification in its native format. The specification should be within a CDATA construct.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Indicator"/>
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</owl:DatatypeProperty>
