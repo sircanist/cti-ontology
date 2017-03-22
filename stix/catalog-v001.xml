@@ -17,21 +17,21 @@
     <uri id="User Entered Import Resolution" name="http://stix.mitre.org/ThreatActor" uri="./threat_actor.owl"/>
     <uri id="User Entered Import Resolution" name="http://stix.mitre.org/stixCommon" uri="./stix_common.owl"/>
     <uri id="User Entered Import Resolution" name="http://stix.mitre.org/stix_core" uri="./stix_core.owl"/>
-    <uri id="User Entered Import Resolution" name="http://cybox.mitre.org/cybox_core" uri="../cybox/cybox_core.owl"/>
+    <uri id="User Entered Import Resolution" name="http://cybox.mitre.org/cybox_core" uri="../cybox/cybox.owl"/>
     <uri id="User Entered Import Resolution" name="http://cpe.mitre.org/cpe" uri="../cpe/cpe.owl"/>
     <uri id="User Entered Import Resolution" name="http://cybox.mitre.org/cyboxCommon" uri="../cybox/cybox_common.owl"/>
     <uri id="User Entered Import Resolution" name="http://cybox.mitre.org/objects/Process" uri="../cybox/process.owl"/>
-    <uri id="User Entered Import Resolution" name="http://www.oasis-open.org/ciq_xpil" uri="../ciq/ciq_xpil.owl"/>
-    <uri id="User Entered Import Resolution" name="http://www.oasis-open.org/ciq_xal" uri="../ciq/ciq_xal.owl"/>
-    <uri id="User Entered Import Resolution" name="http://www.oasis-open.org/ciq_xnl" uri="../ciq/ciq_xnl.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.oasis-open.org/ciq_xpil" uri="../ciq/xpil.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.oasis-open.org/ciq_xal" uri="../ciq/xal.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.oasis-open.org/ciq_xnl" uri="../ciq/xnl.owl"/>
     <uri id="User Entered Import Resolution" name="http://cybox.mitre.org/objects/System" uri="../cybox/system.owl"/>
     <uri id="User Entered Import Resolution" name="http://scap.nist.gov/scap_core" uri="../scap/scap_core.owl"/>
     <uri id="User Entered Import Resolution" name="http://scap.nist.gov/patch" uri="../scap/patch.owl"/>
     <uri id="User Entered Import Resolution" name="http://cybox.mitre.org/objects/Device" uri="../cybox/device.owl"/>
     <uri id="User Entered Import Resolution" name="http://cybox.mitre.org/objects/Product" uri="../cybox/product.owl"/>
-    <uri id="User Entered Import Resolution" name="http://www.oasis-open.org/ciq_currency" uri="../ciq/ciq_currency.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.oasis-open.org/ciq_currency" uri="../ciq/xcl.owl"/>
     <uri id="User Entered Import Resolution" name="http://www.w3.org/2003/01/geo/wgs84_pos" uri="../geo/wgs84_pos.owl"/>
-    <uri id="User Entered Import Resolution" name="http://www.oasis-open.org/ciq_common" uri="../ciq/ciq_common.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.oasis-open.org/ciq_common" uri="../ciq/ciqct.owl"/>
     <uri id="User Entered Import Resolution" name="http://cybox.mitre.org/objects/Thread" uri="../cybox/thread.owl"/>
     <uri id="User Entered Import Resolution" name="http://cybox.mitre.org/objects/Port" uri="../cybox/port.owl"/>
     <uri id="User Entered Import Resolution" name="http://cybox.mitre.org/objects/NetworkConnection" uri="../cybox/network_connection.owl"/>

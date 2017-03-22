@@ -5023,12 +5023,14 @@ This string should be present only if VS_FF_PRIVATEBUILD is specified in the fil
 		<rdfs:label>root.generation number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
 		<rdfs:isDefinedBy rdf:datatype="&xsd;string">&lt;http://cybox.mitre.org/objects/File&gt;</rdfs:isDefinedBy>
+		<rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
 	</owl:DatatypeProperty>
 	
 	<owl:DatatypeProperty rdf:about="&fileObj;root.objectNumber">
 		<rdfs:label>root.object number</rdfs:label>
 		<rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
 		<rdfs:isDefinedBy rdf:datatype="&xsd;string">&lt;http://cybox.mitre.org/objects/File&gt;</rdfs:isDefinedBy>
+		<rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
 	</owl:DatatypeProperty>
 	
 	<owl:DatatypeProperty rdf:about="&fileObj;runLengthDecodeCount.nonObfuscated">

@@ -21,10 +21,10 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="http://stix.mitre.org/ThreatActor">
-		<rdfs:label>STIX Threat Actor Ontology</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (STIX) Threat Actor.  The Threat Actor ontology provides a characterization of a single STIX Threat Actor.
+		<rdfs:label>stix Threat Actor Ontology</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (stix) Threat Actor.  The Threat Actor ontology provides a characterization of a single stix Threat Actor.
 
-A STIX Threat Actor conveys information that characterizes or identifies (or both) an adversary. The characterization consists of information like the sophistication of the threat actor, its motivations and desired effects, and historically observed behavior. In the STIX relationship model, threat actors also include information such as observed TTPs, historic (or current) campaigns, and other threat actors that appear associated with this actor.</rdfs:comment>
+A stix Threat Actor conveys information that characterizes or identifies (or both) an adversary. The characterization consists of information like the sophistication of the threat actor, its motivations and desired effects, and historically observed behavior. In the stix relationship model, threat actors also include information such as observed TTPs, historic (or current) campaigns, and other threat actors that appear associated with this actor.</rdfs:comment>
 		<owl:imports rdf:resource="http://data-marking.mitre.org/Data_Marking"/>
 		<owl:imports rdf:resource="http://stix.mitre.org/stixCommon"/>
 		<owl:imports rdf:resource="http://www.oasis-open.org/ciq_common"/>
@@ -47,9 +47,9 @@ A STIX Threat Actor conveys information that characterizes or identifies (or bot
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:label>Threat Actor</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">Characterizes a single STIX Threat Actor.
+		<rdfs:comment rdf:datatype="&xsd;string">Characterizes a single stix Threat Actor.
 
-A STIX Threat Actor characterizes a cyber threat actor including their identity, sophistication, presumed intent, historically observed behavior (TTPs), and campaigns or other threat actors they are believed to be associated with.
+A stix Threat Actor characterizes a cyber threat actor including their identity, sophistication, presumed intent, historically observed behavior (TTPs), and campaigns or other threat actors they are believed to be associated with.
 
 ThreatActors are characterizations of malicious actors (or adversaries) representing a cyber attack threat including presumed intent and historically observed behavior. In a structured sense, ThreatActors consist of a characterization of identity, suspected motivation, suspected intended effect, historically observed TTP used by the ThreatActor, historical Campaigns believed associated with the ThreatActor, other ThreatActors believed associated with the ThreatActor, handling guidance, confidence in the asserted characterization of the ThreatActor, source of the ThreatActor information, etc.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/ThreatActor"/>

@@ -21,12 +21,12 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="http://stix.mitre.org/Incident">
-		<rdfs:label>STIX Incident Ontology</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (STIX) Incident.  The STIX Incident ontology provides a characterization of a single cyber Incident.
+		<rdfs:label>stix Incident Ontology</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (stix) Incident.  The stix Incident ontology provides a characterization of a single cyber Incident.
 
-A STIX Incident conveys information about a cyber security incident. This may be the most familiar STIX construct to those with a background in computer security and incident response. As you&apos;d expect, it contains a good deal of information about what occurred, the impact of the incident on systems and information, the incident timeline, points of contact, and other descriptive information.
+A stix Incident conveys information about a cyber security incident. This may be the most familiar stix construct to those with a background in computer security and incident response. As you&apos;d expect, it contains a good deal of information about what occurred, the impact of the incident on systems and information, the incident timeline, points of contact, and other descriptive information.
 
-In the STIX relationship model, incidents can be related to the threat actors involved, the campaigns that they&apos;re a part of, courses of action that were taken or were suggested, indicators that were used to detect the incident or were discovered as part of the investigation, TTPs that were used to carry out the incident, and observables that were detected during the incident.</rdfs:comment>
+In the stix relationship model, incidents can be related to the threat actors involved, the campaigns that they&apos;re a part of, courses of action that were taken or were suggested, indicators that were used to detect the incident or were discovered as part of the investigation, TTPs that were used to carry out the incident, and observables that were detected during the incident.</rdfs:comment>
 		<owl:imports rdf:resource="http://data-marking.mitre.org/Data_Marking"/>
 		<owl:imports rdf:resource="http://stix.mitre.org/stixCommon"/>
 		<owl:imports rdf:resource="http://www.oasis-open.org/ciq_common"/>
@@ -112,11 +112,11 @@ In the STIX relationship model, incidents can be related to the threat actors in
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:label>COA Statement</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">Characterizes the attributes associated with a relationship between a subject STIX construct and STIX Course Of Action construct.
+		<rdfs:comment rdf:datatype="&xsd;string">Characterizes the attributes associated with a relationship between a subject stix construct and stix Course Of Action construct.
 
 The COAStatement helps to define a consistent structure for relationships that go beyond a simple statement of &quot;construct A is related to Course of Action B&quot;.  Instead, additional properties ofthe relationship can be specified such as the nature of the relationship and the level of confidence in the presence and accuracy of the asserted relationship.
 
-The COAStatement class is designed to support its use in representing the relationship attributes as reified data or as a nary-relationship that can be associated with relationship between a subject STIX construct and another STIX Course of Action through the use of the rdf:subject, rdf:predicate, and rdf:object properties.</rdfs:comment>
+The COAStatement class is designed to support its use in representing the relationship attributes as reified data or as a nary-relationship that can be associated with relationship between a subject stix construct and another stix Course of Action through the use of the rdf:subject, rdf:predicate, and rdf:object properties.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Incident"/>
 	</owl:Class>
 	
@@ -152,7 +152,7 @@ The COAStatement class is designed to support its use in representing the relati
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:label>External Impact Accessment Model</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">Characterizes an abstract type enabling the definition through extension of incident impact assessment models external to STIX.</rdfs:comment>
+		<rdfs:comment rdf:datatype="&xsd;string">Characterizes an abstract type enabling the definition through extension of incident impact assessment models external to stix.</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://stix.mitre.org/Incident"/>
 	</owl:Class>
 	

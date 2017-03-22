@@ -21,10 +21,10 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="http://stix.mitre.org/Campaign">
-		<rdfs:label>STIX Campaign Ontology</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (STIX) Campaign.  The STIX Campaign ontology provides a characterization of a single cyber threat Campaign.
+		<rdfs:label>stix Campaign Ontology</rdfs:label>
+		<rdfs:comment rdf:datatype="&xsd;string">This ontology provides a vocabulary and representation for the Structured Threat Information eXpression (stix) Campaign.  The stix Campaign ontology provides a characterization of a single cyber threat Campaign.
 
-A STIX Campaign represents a set of TTPs, incidents, or threat actors that together express a common intent or desired effect. For example, an adversary using a particular set of TTPs (malware and tools) to target an industry sector with a specific intent may constitute a campaign.  In the STIX data model, campaigns represent both that intent itself and, perhaps more importantly, act as a meta-construct to relate the associated TTPs, incidents, and threat actors that are part of that campaign together.</rdfs:comment>
+A stix Campaign represents a set of TTPs, incidents, or threat actors that together express a common intent or desired effect. For example, an adversary using a particular set of TTPs (malware and tools) to target an industry sector with a specific intent may constitute a campaign.  In the stix data model, campaigns represent both that intent itself and, perhaps more importantly, act as a meta-construct to relate the associated TTPs, incidents, and threat actors that are part of that campaign together.</rdfs:comment>
 		<owl:imports rdf:resource="http://data-marking.mitre.org/Data_Marking"/>
 		<owl:imports rdf:resource="http://stix.mitre.org/stixCommon"/>
 		<owl:imports rdf:resource="http://www.oasis-open.org/ciq_common"/>

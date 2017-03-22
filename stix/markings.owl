@@ -52,7 +52,7 @@
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:label>Marking</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">Characterizes a structure for marking information to be applied to portions of STIX content</rdfs:comment>
+		<rdfs:comment rdf:datatype="&xsd;string">Characterizes a structure for marking information to be applied to portions of stix content</rdfs:comment>
 		<rdfs:isDefinedBy rdf:resource="http://data-marking.mitre.org/Data_Marking"/>
 	</owl:Class>
 	
@@ -76,7 +76,7 @@
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:label>Marking Structure</rdfs:label>
-		<rdfs:comment rdf:datatype="&xsd;string">Characterizes the marking information to be applied to STIX content.
+		<rdfs:comment rdf:datatype="&xsd;string">Characterizes the marking information to be applied to stix content.
 
 The MarkingStructure class provides a simple mechanism for leveraging externally defined marking systems, and it is intended to be extended to enable the expresssion of any structured or unstructured data marking mechanism.
 
