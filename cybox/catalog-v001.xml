@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/cyboxCommon" uri="cybox_common.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/cybox_core" uri="cybox_core.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/API" uri="api.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/ARPCache" uri="arp_cache.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/AS" uri="as.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Account" uri="account.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Address" uri="address.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Artifact" uri="artifact.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Code" uri="code.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/DNS" uri="dns.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Device" uri="device.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Disk" uri="disk.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Domain_Name" uri="domain_name.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/EmailMessage" uri="email_message.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Event" uri="event.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/EventLog" uri="event_log.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/File" uri="file.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/GUI" uri="gui.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/HTTP_Session" uri="http_session.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Hostname" uri="hostname.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Library" uri="library.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/LinuxPackage" uri="linux_package.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Memory" uri="memory.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Mutex" uri="mutex.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/NetworkConnection" uri="network_connection.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/NetworkPacket" uri="network_packet.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/NetworkProtocol" uri="network_protocol.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/NetworkRoute" uri="network_route.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/NetworkSocket" uri="network_socket.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/NetworkSubnet" uri="network_subnet.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Pipe" uri="pipe.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Port" uri="port.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Process" uri="process.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Product" uri="product.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/SMSMessage" uri="sms_message.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Semaphore" uri="semaphore.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Socket_Address" uri="socket_address.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/System" uri="system.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Thread" uri="thread.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/URI" uri="uri.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/URLHistory" uri="url_history.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/UserSession" uri="user_session.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Volume" uri="volume.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/Whois" uri="whois.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsCriticalSection" uri="windows_critical_section.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsFilemapping" uri="windows_filemapping.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsHandle" uri="windows_handle.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsHook" uri="windows_hook.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsKernel" uri="windows_kernel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsMailslot" uri="windows_mailslot.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsNetworkShare" uri="windows_network_share.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsPrefetch" uri="windows_prefetch.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsRegistry" uri="windows_registry.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsSystemRestore" uri="windows_system_restore.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsTask" uri="windows_task.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/WindowsWaitableTimer" uri="windows_waitable_timer.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544132976904" name="http://cybox.mitre.org/objects/X509Certificate" uri="x509_certificate.rdf"/>
+    </group>
+</catalog>

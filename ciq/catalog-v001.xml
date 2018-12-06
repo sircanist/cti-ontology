@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1544117419308" name="http://www.oasis-open.org/ciq_common" uri="ciq_common.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544117419308" name="http://www.oasis-open.org/ciq_currency" uri="ciq_currency.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544117419308" name="http://www.oasis-open.org/ciq_xal" uri="ciq_xal.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544117419308" name="http://www.oasis-open.org/ciq_xnl" uri="ciq_xnl.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544117419308" name="http://www.oasis-open.org/ciq_xpil" uri="ciq_xpil.rdf"/>
+    </group>
+</catalog>

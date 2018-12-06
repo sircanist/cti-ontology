@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1544125119610" name="http://cwe.mitre.org/cwe" uri="cwe.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1544125119610" name="http://nvd.nist.gov/cwss" uri="cwss.rdf"/>
+    </group>
+</catalog>
