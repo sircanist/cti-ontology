@@ -6,17 +6,20 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://cce.mitre.org/cce">
         <owl:versionIRI rdf:resource="http://cce.mitre.org/cce/v5.20130214/v1.0.1/"/>
         <owl:imports rdf:resource="http://cpe.mitre.org/cpe"/>
         <owl:imports rdf:resource="http://scap.nist.gov/scap_core"/>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/mswimmer/cti-ontology/tree/master/cce</rdfs:seeAlso>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.20130214-1.0.1</owl:versionInfo>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://nvd.nist.gov/config/cce</rdfs:isDefinedBy>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology provides a vocabulary and representation for the Common Configuration Enumeration (CCE) which provides unique identifiers to system configuration issues in order to facility fast and accurate correlation of configuration data across multiple information sources and tools.  This ontology is compatible with the version 5 format of the Common Configuration Enumeration XML schema.
 
-Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
+Copyright (c) 2014, DaedaFusion, LLC.  All rights
+        reserved.</rdfs:comment>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:label>Common Configuration Enumeration (CCE) Ontology</rdfs:label>
     </owl:Ontology>
     

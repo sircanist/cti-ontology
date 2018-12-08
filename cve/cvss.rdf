@@ -5,17 +5,20 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:cvss="http://nvd.nist.gov/cvss#">
     <owl:Ontology rdf:about="http://nvd.nist.gov/cvss">
         <owl:versionIRI rdf:resource="https://nvd.nist.gov/cvss/v2.0.2/v1.0.1"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.2-1.0.1</owl:versionInfo>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/mswimmer/cti-ontology/tree/master/cve</rdfs:seeAlso>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.first.org/cvss/user-guide</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology provides a vocabulary and representation for the Common Vulnerability Scoring System (CVSS) v2 which provides an open framework for communicating the characteristics and impacts of IT vulnerabilities.  CVSS consists of three groups: Base, Temporal, and Environmental. 
 
-Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
+Copyright (c) 2014, DaedaFusion, LLC.  All rights
+        reserved.</rdfs:comment>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:label>Common Vulnerability Scoring System (CVSS) Ontology</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://csrc.nist.gov/schema/nvd/cvss-v2_0.2.xsd</rdfs:isDefinedBy>
     </owl:Ontology>

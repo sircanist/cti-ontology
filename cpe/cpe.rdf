@@ -5,6 +5,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:cpe="http://cpe.mitre.org/cpe#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -17,7 +18,7 @@
         <owl:imports rdf:resource="http://cybox.mitre.org/cyboxCommon"/>
         <owl:imports rdf:resource="http://www.oasis-open.org/ciq_xpil"/>
         <owl:imports rdf:resource="http://cybox.mitre.org/objects/Device"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.3-1.0.1</owl:versionInfo>
         <rdfs:label>Common Platform Enumeration (CPE) Ontology</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/mswimmer/cti-ontology/tree/master/cpe</rdfs:seeAlso>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://nvd.nist.gov/products/cpe</rdfs:isDefinedBy>
@@ -25,7 +26,9 @@
 
 The ontology is based on the Common Platform Enumeration schema maintained by NIST copyright 2011-2014.  The version number of the ontology is kept in sync with the schema in order to more easily relate between the ontology and the corresponding schema version.
 
-Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
+Copyright (c) 2014, DaedaFusion, LLC.  All rights
+        reserved.</rdfs:comment>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
     </owl:Ontology>
     
 

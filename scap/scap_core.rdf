@@ -5,15 +5,18 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:scap_core="http://scap.nist.gov/scap_core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://scap.nist.gov/scap_core">
         <owl:versionIRI rdf:resource="http://scap.nist.gov/scap_core/v1.1/v1.0.1"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology provides a vocabulary and representation for the Security Content Automation Protocol (SCAP) core data types.  The SCAP is a method for using specific standards to enable automated compliance evaluation, vulnerability management, measurement, and policy compliance evaluation.
 
-Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
+Copyright (c) 2014, DaedaFusion, LLC.  All rights
+        reserved.</rdfs:comment>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:label>Security Content Automation Protocol (SCAP) Core  Ontology</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1-1.0.1</owl:versionInfo>
     </owl:Ontology>
     
 

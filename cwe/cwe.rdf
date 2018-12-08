@@ -7,6 +7,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://cwe.mitre.org/cwe">
         <owl:versionIRI rdf:resource="http://cwe.mitre.org/cwe/v3.1/v1.0.1"/>
@@ -16,11 +17,13 @@
         <owl:imports rdf:resource="http://cybox.mitre.org/objects/NetworkProtocol"/>
         <owl:imports rdf:resource="http://nvd.nist.gov/cve"/>
         <rdfs:label>Common Weakness Enumeration (CWE) Ontology</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.1-1.0.1</owl:versionInfo>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/mswimmer/cti-ontology/tree/master/cwe</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology provides a vocabulary and representation for the Common Weakness Enumeration (CWE) which provides a unified, measurable set of software weaknesses that is enabling more effective discussion, description, selection, and use of software security tools and services that can find these weaknesses in source code and operational systems as well as better understanding and management of software weaknesses related to architecture and design. 
 
-Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
+Copyright (c) 2014, DaedaFusion, LLC.  All rights
+        reserved.</rdfs:comment>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://cwe.mitre.org/data/xsd/cwe_schema_v6.0.1.xsd</rdfs:isDefinedBy>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://cwe.mitre.org/data/index.html</rdfs:seeAlso>
     </owl:Ontology>

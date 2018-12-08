@@ -6,6 +6,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://scap.nist.gov/patch">
         <owl:versionIRI rdf:resource="http://scap.nist.gov/patch/v1.1/v1.0.1"/>
@@ -13,8 +14,10 @@
         <rdfs:label>Security Content Automation Protocol (SCAP) Patch Ontology</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology provides a vocabulary and representation for the Security Content Automation Protocol (SCAP) Patch data type which provides a standardized method of describing and identifying patches to address vulnerabilities.  The SCAP is a method for using specific standards to enable automatedmpliance evaluation, vulnerability management, measurement, and policy compliance evaluation. 
 
-Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:versionInfo>
+Copyright (c) 2014, DaedaFusion, LLC.  All rights
+        reserved.</rdfs:comment>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1-1.0.1</owl:versionInfo>
     </owl:Ontology>
     
 

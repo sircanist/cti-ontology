@@ -6,6 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xnl="http://www.oasis-open.org/ciq_xnl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.oasis-open.org/ciq_xnl">
         <owl:versionIRI rdf:resource="http://www.oasis-open.org/ciq_xnl/v3.0/v1.0.1"/>
@@ -13,8 +14,10 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://docs.oasis-open.org/ciq/v3.0/specs/ciq-specs-v3.html</rdfs:isDefinedBy>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology provides a vocabulary and representation of the OASIS Customer Information Quality (CIQ) eXtensible Naming Language (xNL) Specification V3.0.
 
-Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:versionInfo>
+Copyright (c) 2014, DaedaFusion, LLC.  All rights
+        reserved.</rdfs:comment>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.0-1.0.1</owl:versionInfo>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/mswimmer/cti-ontology/tree/master/ciq</rdfs:seeAlso>
         <rdfs:label>OASIS Customer Information Quality (CIQ) eXtensible Naming Language (xNL) Ontology</rdfs:label>
     </owl:Ontology>

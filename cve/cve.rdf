@@ -7,6 +7,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://nvd.nist.gov/cve">
         <owl:versionIRI rdf:resource="http://nvd.nist.gov/cve/v2.0/v1.0.1"/>
@@ -18,11 +19,13 @@
         <owl:imports rdf:resource="http://cybox.mitre.org/objects/NetworkProtocol"/>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://scap.nist.gov/schema/nvd/nvd-cve-feed_2.0.xsd</rdfs:isDefinedBy>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/mswimmer/cti-ontology/tree/master/cve</rdfs:seeAlso>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:versionInfo>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://nvd.nist.gov/vuln</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology provides a vocabulary and representation for the Common Vulnerability Enumeration (CVE) and Open Source Vulnerability Database (OSVDB) which provides a unified, measurable set of software vulnerability information that is enabling more effective discussion, description, selection, and use of software security tools and services that can find these vulnerabilities in source code and operational systems as well as better understanding and management of software vulnerabilities related to architecture and design. 
 
 Copyright (c) 2014, DaedaFusion, LLC.  All rights reserved.</rdfs:comment>
+        <owl:versionInfo
+            rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0-1.0.1</owl:versionInfo>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:label>Common Vulnerability Enumeration (CVE) and Open Source Vulnerabilty Database (OSVDB) Ontology</rdfs:label>
     </owl:Ontology>
     
@@ -591,6 +594,24 @@ Common Vulnerability Enumeration (CVE) identifier associated with the vulnerabil
     
 
 
+    <!-- http://cpe.mitre.org/cpe#CPE -->
+
+    <owl:Class rdf:about="http://cpe.mitre.org/cpe#CPE"/>
+    
+
+
+    <!-- http://cpe.mitre.org/cpe#Platform -->
+
+    <owl:Class rdf:about="http://cpe.mitre.org/cpe#Platform"/>
+    
+
+
+    <!-- http://cwe.mitre.org/cwe#Weakness -->
+
+    <owl:Class rdf:about="http://cwe.mitre.org/cwe#Weakness"/>
+    
+
+
     <!-- http://nvd.nist.gov/cve#FixAction -->
 
     <owl:Class rdf:about="http://nvd.nist.gov/cve#FixAction">
@@ -801,6 +822,12 @@ Common Vulnerability Enumeration (CVE) identifier associated with the vulnerabil
     <!-- http://scap.nist.gov/patch#Patch -->
 
     <owl:Class rdf:about="http://scap.nist.gov/patch#Patch"/>
+    
+
+
+    <!-- http://scap.nist.gov/scap_core#Catalog -->
+
+    <owl:Class rdf:about="http://scap.nist.gov/scap_core#Catalog"/>
     
 
 
