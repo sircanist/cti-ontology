@@ -1,0 +1,3118 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/cti"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.org/cti">
+    <Prefix name="cti" IRI="http://purl.org/cti#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="cti-sc1" IRI="http://purl.org/cti-scenario1#"/>
+    <Prefix name="cti-sc2" IRI="http://purl.org/cti-scenario2#"/>
+    <Prefix name="pattern" IRI="http://www.w3id.org/ontolink/pattern.owl#"/>
+    <Declaration>
+        <Class IRI="#AccountTakeoverEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AffectingConsequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AffectingLikehood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AllowedResolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlterExecutionLogicConsequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntivirusDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttackEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttackPattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuditDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlockedResolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BypassProtectionMechanismConsequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPURessource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CTIBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CTIBaseSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Campaign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CampaignActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CampaignStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CertificateCommonNameAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CertificateIssuerAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CertificateSerialAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CleanRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommonRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanyIdentity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetitionAdvantageEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplexObservable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerGuidAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerTarget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseOfAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseOfActionCost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseOfActionEfficacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CustomerActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CustomerDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DenialOfServiceConsequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DenialOfServiceIncident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DestructionEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DetectedResolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiplomaticActionCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EcrimeActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EgoMotivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmailAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmailHeaderAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmailMessageAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmailSubjectAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EredicationCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EvilRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExecuteUnauthorizedCodeConsequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExerciseIncident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalFraudDetectionDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FileAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FileNameAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilePathAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FileRessource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialAuditDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialMotivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FraudEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FutureCampaignStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GainPriviligesConsequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HIPSDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HackerActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HacktivistActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardeningCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HashAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HideActivitiesConsequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighAffectingLikeHood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighCOAEfficacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighCoaCost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighConfidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighIncidentStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighPriority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HistoricCampaignStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoneyPotCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostNameAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IOCIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IPAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IPv4Atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IPv6Atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITAuditDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IdealogicalMotivaiton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Identity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IdentityTarget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImeiAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImproperUsageIncident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImsiAtomAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentResponseDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indicateable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfoCOACost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfoCOAEfficacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InsiderThreatActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalBlockingCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalFraudDetectionDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvestigationIncident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Judgement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LawEnforcementDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogReviewDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogicalAccessRestrictionsCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowAffectingLikeHood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowCOACost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowCOAEfficacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowConfidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowPriority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MacAddressAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaliciousCodeIncident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumCOACost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumCOAEfficacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumConfidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumPriority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemoryRessource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MiddleAffectingLikeHood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryMotivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModifyMemoryConsequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonitoringCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonitoringDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NIDSDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NegativeFeedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkTarget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeutralFeedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewIncidentStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoneCOACost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoneCOAEfficacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoneIncidentStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObservableIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OngoingCampaignStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenIncidentStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpportunisticMotivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PatchingCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PatternIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerimterBlockingCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonIdentity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalAccessRestrictionsCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolicyActionsCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalMotivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PositiveFeedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Priority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessNameAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicDisclosureCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReadFilesConsequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReadMemoryConsequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RebuildingCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedirectionCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegistryKeyAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegistryPathAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegistryValueAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RuleIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SHA256Atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SHA512Atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScansIncident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityAlwarmDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sighting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SimpleObservable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SnortIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StalledIncidentStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuspiciousRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemAffecting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemProcessRessource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemRessources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Target"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TheftEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainingCoA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#URLAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnauthorizedAccessIncident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnknownCOACost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnknownCOAEfficacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnknownDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnknownIncidentStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnknownRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnknownResolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnrelatedPartDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserAgentAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vulnerable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weakness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assignedIdentity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#attacksTarget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#attributedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedOnIndicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedOnObservable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedOnSighting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedOnWeakness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#becauseSeen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#campaignStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coaEfficacy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#foundAtLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fromCampaign"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fromIdentity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fromSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAffectOnSystemRessource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAffectingConsequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAffectingLikehood"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttackPattern"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConfidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEffect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeedback"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIdentity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIncidentState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIntendedAttackEffect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasJudgement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMotivation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPriority"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSeverity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubWeakness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#indicates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDiscoveredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mitiagesIncident"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mitiagesTool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mitigatesAttackPattern"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mitigatesMalware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfIncident"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#producedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatedCourseOfAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resolvedAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takenCourseOfAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesAttackPattern"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesMalware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesTool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#variantOfWeakness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#abstractionLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#activityTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#campaignType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#closedIncidentTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coaSideEffect"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#commonVulnerableEnueration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#commonWeaknessEnumeration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#created"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#discoveredIncidentTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#externalReference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#feedbackReason"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#impactDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#malwareVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mitreAttackPhase"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#modeOfIntroduction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#observedTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#operatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rejectedIncidentTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#remediatedIncidentTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reportedIncidentTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#revision"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#schemaVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sensorDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sensorName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shortDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#snortSignature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sourceName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sourceURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tlp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#toolVersion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BadIPAddress"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtherBadIPAddress"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AccountTakeoverEffect"/>
+        <Class IRI="#AttackEffect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Indicateable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackPattern"/>
+            <Class IRI="#AttackPattern"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasConfidence"/>
+            <Class IRI="#Confidence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIdentity"/>
+            <Class IRI="#Identity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIntendedAttackEffect"/>
+            <Class IRI="#AttackEffect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMotivation"/>
+            <Class IRI="#Motivation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AffectingConsequence"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AffectingLikehood"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllowedResolution"/>
+        <Class IRI="#Resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlterExecutionLogicConsequence"/>
+        <Class IRI="#AffectingConsequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntivirusDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttackEffect"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttackEffect"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#abstractionLevel"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttackPattern"/>
+        <Class IRI="#Indicateable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttackPattern"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesTool"/>
+            <Class IRI="#Tool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttackPattern"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#mitreAttackPhase"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuditDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlockedResolution"/>
+        <Class IRI="#Resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BypassProtectionMechanismConsequence"/>
+        <Class IRI="#AffectingConsequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CPURessource"/>
+        <Class IRI="#SystemRessources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBase"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#created"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBase"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBase"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#externalReference"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBase"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#revision"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBase"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#schemaVersion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBase"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#shortDescription"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBase"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#title"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBase"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#tlp"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBaseSource"/>
+        <Class IRI="#CTIBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBaseSource"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#fromSource"/>
+            <Class IRI="#Source"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBaseSource"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFeedback"/>
+            <Class IRI="#Feedback"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTIBaseSource"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#producedBy"/>
+            <Class IRI="#Source"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <Class IRI="#Indicateable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#attacksTarget"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#attributedTo"/>
+            <Class IRI="#Actor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#campaignStatus"/>
+            <Class IRI="#CampaignStatus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasActivity"/>
+            <Class IRI="#CampaignActivity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasConfidence"/>
+            <Class IRI="#Confidence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIntendedAttackEffect"/>
+            <Class IRI="#AttackEffect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesAttackPattern"/>
+            <Class IRI="#AttackPattern"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesMalware"/>
+            <Class IRI="#Malware"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesTool"/>
+            <Class IRI="#Tool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#campaignType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampaignActivity"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampaignActivity"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#activityTime"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampaignStatus"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CertificateCommonNameAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CertificateIssuerAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CertificateSerialAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CleanRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommonRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyIdentity"/>
+        <Class IRI="#Identity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetitionAdvantageEffect"/>
+        <Class IRI="#AttackEffect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplexObservable"/>
+        <Class IRI="#Observable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerGuidAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerTarget"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confidence"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfAction"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#coaEfficacy"/>
+            <Class IRI="#CourseOfActionEfficacy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mitiagesIncident"/>
+            <Class IRI="#Incident"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mitiagesTool"/>
+            <Class IRI="#Tool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mitigatesAttackPattern"/>
+            <Class IRI="#AttackPattern"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mitigatesMalware"/>
+            <Class IRI="#Malware"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#relatedCourseOfAction"/>
+            <Class IRI="#CourseOfAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfAction"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#coaSideEffect"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfActionCost"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfActionEfficacy"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CustomerActor"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CustomerDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DenialOfServiceConsequence"/>
+        <Class IRI="#AffectingConsequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DenialOfServiceIncident"/>
+        <Class IRI="#Incident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DestructionEffect"/>
+        <Class IRI="#AttackEffect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DetectedResolution"/>
+        <Class IRI="#Resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiplomaticActionCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomainAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EcrimeActor"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EgoMotivation"/>
+        <Class IRI="#Motivation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmailAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmailHeaderAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmailMessageAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmailSubjectAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EredicationCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EvilRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExecuteUnauthorizedCodeConsequence"/>
+        <Class IRI="#AffectingConsequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExerciseIncident"/>
+        <Class IRI="#Incident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalFraudDetectionDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feedback"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feedback"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#feedbackReason"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FileAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FileNameAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FilePathAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FileRessource"/>
+        <Class IRI="#SystemRessources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinancialAuditDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinancialMotivation"/>
+        <Class IRI="#Motivation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FraudEffect"/>
+        <Class IRI="#AttackEffect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FutureCampaignStatus"/>
+        <Class IRI="#CampaignStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GainPriviligesConsequence"/>
+        <Class IRI="#AffectingConsequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HIPSDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HackerActor"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HacktivistActor"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardeningCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HashAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HideActivitiesConsequence"/>
+        <Class IRI="#AffectingConsequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighAffectingLikeHood"/>
+        <Class IRI="#AffectingLikehood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighCOAEfficacy"/>
+        <Class IRI="#CourseOfActionEfficacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighCoaCost"/>
+        <Class IRI="#CourseOfActionCost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighConfidence"/>
+        <Class IRI="#Confidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighIncidentStatus"/>
+        <Class IRI="#IncidentStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighPriority"/>
+        <Class IRI="#Priority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HistoricCampaignStatus"/>
+        <Class IRI="#CampaignStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoneyPotCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HostNameAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IOCIndicator"/>
+        <Class IRI="#RuleIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IPAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IPv4Atom"/>
+        <Class IRI="#IPAtom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IPv6Atom"/>
+        <Class IRI="#IPAtom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITAuditDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IdealogicalMotivaiton"/>
+        <Class IRI="#Motivation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Identity"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IdentityTarget"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImeiAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproperUsageIncident"/>
+        <Class IRI="#Incident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImsiAtomAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#assignedIdentity"/>
+            <Class IRI="#Identity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#attacksTarget"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#fromCampaign"/>
+            <Class IRI="#Campaign"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasActor"/>
+            <Class IRI="#Actor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasConfidence"/>
+            <Class IRI="#Confidence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEffect"/>
+            <Class IRI="#AttackEffect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIncidentState"/>
+            <Class IRI="#IncidentStatus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDiscoveredBy"/>
+            <Class IRI="#IncidentDiscovery"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#takenCourseOfAction"/>
+            <Class IRI="#CourseOfAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncidentDiscovery"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncidentResponseDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicateable"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicator"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasConfidence"/>
+            <Class IRI="#Confidence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSeverity"/>
+            <Class IRI="#Severity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#indicates"/>
+            <Class IRI="#Indicateable"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicator"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#impactDescription"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicator"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#mitreAttackPhase"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfoCOACost"/>
+        <Class IRI="#CourseOfActionCost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfoCOAEfficacy"/>
+        <Class IRI="#CourseOfActionEfficacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InsiderThreatActor"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalBlockingCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalFraudDetectionDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvestigationIncident"/>
+        <Class IRI="#Incident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judgement"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judgement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnIndicator"/>
+            <Class IRI="#Indicator"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judgement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnObservable"/>
+            <Class IRI="#Observable"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judgement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnSighting"/>
+            <Class IRI="#Sighting"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judgement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasConfidence"/>
+            <Class IRI="#Confidence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judgement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPriority"/>
+            <Class IRI="#Priority"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judgement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRating"/>
+            <Class IRI="#Rating"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judgement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSeverity"/>
+            <Class IRI="#Severity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LawEnforcementDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LogReviewDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LogicalAccessRestrictionsCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowAffectingLikeHood"/>
+        <Class IRI="#AffectingLikehood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowCOACost"/>
+        <Class IRI="#CourseOfActionCost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowCOAEfficacy"/>
+        <Class IRI="#CourseOfActionEfficacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowConfidence"/>
+        <Class IRI="#Confidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowPriority"/>
+        <Class IRI="#Priority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MacAddressAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaliciousCodeIncident"/>
+        <Class IRI="#Incident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malware"/>
+        <Class IRI="#Indicateable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malware"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#malwareVersion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malware"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#mitreAttackPhase"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumCOACost"/>
+        <Class IRI="#CourseOfActionCost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumCOAEfficacy"/>
+        <Class IRI="#CourseOfActionEfficacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumConfidence"/>
+        <Class IRI="#Confidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumPriority"/>
+        <Class IRI="#Priority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemoryRessource"/>
+        <Class IRI="#SystemRessources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MiddleAffectingLikeHood"/>
+        <Class IRI="#AffectingLikehood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryEffect"/>
+        <Class IRI="#AttackEffect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryMotivation"/>
+        <Class IRI="#Motivation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModifyMemoryConsequence"/>
+        <Class IRI="#AffectingConsequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonitoringCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonitoringDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motivation"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NIDSDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegativeFeedback"/>
+        <Class IRI="#Feedback"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NetworkTarget"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeutralFeedback"/>
+        <Class IRI="#Feedback"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewIncidentStatus"/>
+        <Class IRI="#IncidentStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoneCOACost"/>
+        <Class IRI="#CourseOfActionCost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoneCOAEfficacy"/>
+        <Class IRI="#CourseOfActionEfficacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoneIncidentStatus"/>
+        <Class IRI="#IncidentStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observable"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observable"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasJudgement"/>
+            <Class IRI="#Judgement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservableIndicator"/>
+        <Class IRI="#Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservableIndicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#becauseSeen"/>
+            <Class IRI="#Observable"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OngoingCampaignStatus"/>
+        <Class IRI="#CampaignStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenIncidentStatus"/>
+        <Class IRI="#IncidentStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpportunisticMotivation"/>
+        <Class IRI="#Motivation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PatchingCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PatternIndicator"/>
+        <Class IRI="#Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerimterBlockingCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonIdentity"/>
+        <Class IRI="#Identity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalAccessRestrictionsCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolicyActionsCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalMotivation"/>
+        <Class IRI="#Motivation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositiveFeedback"/>
+        <Class IRI="#Feedback"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Priority"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessNameAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicDisclosureCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rating"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReadFilesConsequence"/>
+        <Class IRI="#AffectingConsequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReadMemoryConsequence"/>
+        <Class IRI="#AffectingConsequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RebuildingCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedirectionCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegistryKeyAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegistryPathAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegistryValueAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resolution"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuleIndicator"/>
+        <Class IRI="#Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SHA256Atom"/>
+        <Class IRI="#HashAtom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SHA512Atom"/>
+        <Class IRI="#HashAtom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScansIncident"/>
+        <Class IRI="#Incident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityAlwarmDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#sensorDescription"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#sensorName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severity"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sighting"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sighting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasConfidence"/>
+            <Class IRI="#Confidence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sighting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSeverity"/>
+            <Class IRI="#Severity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sighting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#observedAt"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sighting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#observedBy"/>
+            <Class IRI="#Sensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sighting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#partOfIncident"/>
+            <Class IRI="#Incident"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sighting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#resolvedAs"/>
+            <Class IRI="#Resolution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sighting"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#observedTime"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimpleObservable"/>
+        <Class IRI="#Observable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimpleObservable"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SnortIndicator"/>
+        <Class IRI="#RuleIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SnortIndicator"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#snortSignature"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Source"/>
+        <Class IRI="#CTIBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Source"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#fromIdentity"/>
+            <Class IRI="#Identity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Source"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#sourceName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Source"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#sourceURL"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StalledIncidentStatus"/>
+        <Class IRI="#IncidentStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateActor"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuspiciousRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemAffecting"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemAffecting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAffectOnSystemRessource"/>
+            <Class IRI="#SystemRessources"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemAffecting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAffectingConsequence"/>
+            <Class IRI="#AffectingConsequence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemAffecting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAffectingLikehood"/>
+            <Class IRI="#AffectingLikehood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemProcessRessource"/>
+        <Class IRI="#SystemRessources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemRessources"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target"/>
+        <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIdentity"/>
+            <Class IRI="#Identity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TheftEffect"/>
+        <Class IRI="#AttackEffect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <Class IRI="#Indicateable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#attacksTarget"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#mitreAttackPhase"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#toolVersion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainingCoA"/>
+        <Class IRI="#CourseOfAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#URLAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnauthorizedAccessIncident"/>
+        <Class IRI="#Incident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnknownCOACost"/>
+        <Class IRI="#CourseOfActionCost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnknownCOAEfficacy"/>
+        <Class IRI="#CourseOfActionEfficacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnknownDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnknownIncidentStatus"/>
+        <Class IRI="#IncidentStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnknownRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnknownResolution"/>
+        <Class IRI="#Resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnrelatedPartDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserActor"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserAgentAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserAtom"/>
+        <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserDiscovery"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerable"/>
+        <Class IRI="#SystemAffecting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerable"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#commonVulnerableEnueration"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weakness"/>
+        <Class IRI="#SystemAffecting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weakness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnWeakness"/>
+            <Class IRI="#Weakness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weakness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSubWeakness"/>
+            <Class IRI="#Weakness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weakness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#variantOfWeakness"/>
+            <Class IRI="#Weakness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weakness"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#commonWeaknessEnumeration"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weakness"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#modeOfIntroduction"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weakness"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#operatingSystem"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Actor"/>
+        <Class IRI="#AttackPattern"/>
+        <Class IRI="#Campaign"/>
+        <Class IRI="#Malware"/>
+        <Class IRI="#Tool"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AffectingConsequence"/>
+        <Class IRI="#AffectingLikehood"/>
+        <Class IRI="#AttackEffect"/>
+        <Class IRI="#CampaignActivity"/>
+        <Class IRI="#CampaignStatus"/>
+        <Class IRI="#Confidence"/>
+        <Class IRI="#CourseOfAction"/>
+        <Class IRI="#CourseOfActionCost"/>
+        <Class IRI="#CourseOfActionEfficacy"/>
+        <Class IRI="#Feedback"/>
+        <Class IRI="#Identity"/>
+        <Class IRI="#Incident"/>
+        <Class IRI="#IncidentDiscovery"/>
+        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#Indicateable"/>
+        <Class IRI="#Indicator"/>
+        <Class IRI="#Judgement"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#Motivation"/>
+        <Class IRI="#Observable"/>
+        <Class IRI="#Priority"/>
+        <Class IRI="#Rating"/>
+        <Class IRI="#Resolution"/>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#Severity"/>
+        <Class IRI="#Sighting"/>
+        <Class IRI="#SystemAffecting"/>
+        <Class IRI="#SystemRessources"/>
+        <Class IRI="#Target"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AllowedResolution"/>
+        <Class IRI="#BlockedResolution"/>
+        <Class IRI="#DetectedResolution"/>
+        <Class IRI="#UnknownResolution"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CPURessource"/>
+        <Class IRI="#FileRessource"/>
+        <Class IRI="#MemoryRessource"/>
+        <Class IRI="#SystemProcessRessource"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CertificateCommonNameAtom"/>
+        <Class IRI="#CertificateIssuerAtom"/>
+        <Class IRI="#CertificateSerialAtom"/>
+        <Class IRI="#ComputerGuidAtom"/>
+        <Class IRI="#DomainAtom"/>
+        <Class IRI="#EmailAtom"/>
+        <Class IRI="#EmailHeaderAtom"/>
+        <Class IRI="#EmailMessageAtom"/>
+        <Class IRI="#EmailSubjectAtom"/>
+        <Class IRI="#FileAtom"/>
+        <Class IRI="#FileNameAtom"/>
+        <Class IRI="#FilePathAtom"/>
+        <Class IRI="#HashAtom"/>
+        <Class IRI="#HostNameAtom"/>
+        <Class IRI="#IPAtom"/>
+        <Class IRI="#ImeiAtom"/>
+        <Class IRI="#ImsiAtomAtom"/>
+        <Class IRI="#MacAddressAtom"/>
+        <Class IRI="#ProcessNameAtom"/>
+        <Class IRI="#RegistryKeyAtom"/>
+        <Class IRI="#RegistryPathAtom"/>
+        <Class IRI="#RegistryValueAtom"/>
+        <Class IRI="#URLAtom"/>
+        <Class IRI="#UserAgentAtom"/>
+        <Class IRI="#UserAtom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CleanRating"/>
+        <Class IRI="#CommonRating"/>
+        <Class IRI="#EvilRating"/>
+        <Class IRI="#SuspiciousRating"/>
+        <Class IRI="#UnknownRating"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ComplexObservable"/>
+        <Class IRI="#SimpleObservable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExternalLocation"/>
+        <Class IRI="#InternalLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FutureCampaignStatus"/>
+        <Class IRI="#HistoricCampaignStatus"/>
+        <Class IRI="#OngoingCampaignStatus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighAffectingLikeHood"/>
+        <Class IRI="#LowAffectingLikeHood"/>
+        <Class IRI="#MiddleAffectingLikeHood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighCOAEfficacy"/>
+        <Class IRI="#InfoCOAEfficacy"/>
+        <Class IRI="#LowCOAEfficacy"/>
+        <Class IRI="#MediumCOAEfficacy"/>
+        <Class IRI="#NoneCOAEfficacy"/>
+        <Class IRI="#UnknownCOAEfficacy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighCoaCost"/>
+        <Class IRI="#InfoCOACost"/>
+        <Class IRI="#LowCOACost"/>
+        <Class IRI="#MediumCOACost"/>
+        <Class IRI="#NoneCOACost"/>
+        <Class IRI="#UnknownCOACost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighConfidence"/>
+        <Class IRI="#LowConfidence"/>
+        <Class IRI="#MediumConfidence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighIncidentStatus"/>
+        <Class IRI="#NewIncidentStatus"/>
+        <Class IRI="#NoneIncidentStatus"/>
+        <Class IRI="#OpenIncidentStatus"/>
+        <Class IRI="#StalledIncidentStatus"/>
+        <Class IRI="#UnknownIncidentStatus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighPriority"/>
+        <Class IRI="#LowPriority"/>
+        <Class IRI="#MediumPriority"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighSeverity"/>
+        <Class IRI="#LowSeverity"/>
+        <Class IRI="#MediumSeverity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IOCIndicator"/>
+        <Class IRI="#SnortIndicator"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IPv4Atom"/>
+        <Class IRI="#IPv6Atom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ObservableIndicator"/>
+        <Class IRI="#PatternIndicator"/>
+        <Class IRI="#RuleIndicator"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RealLocation"/>
+        <Class IRI="#VirtualLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SHA256Atom"/>
+        <Class IRI="#SHA512Atom"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#IPv4Atom"/>
+        <NamedIndividual IRI="#BadIPAddress"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IPv4Atom"/>
+        <NamedIndividual IRI="#OtherBadIPAddress"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#BadIPAddress"/>
+        <Literal>1.2.3.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#OtherBadIPAddress"/>
+        <Literal>1.2.3.4</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assignedIdentity"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#attributedTo"/>
+        <Class IRI="#Campaign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOnIndicator"/>
+        <Class IRI="#Judgement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOnObservable"/>
+        <Class IRI="#Judgement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOnSighting"/>
+        <Class IRI="#Judgement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOnWeakness"/>
+        <Class IRI="#Weakness"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#becauseSeen"/>
+        <Class IRI="#ObservableIndicator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#campaignStatus"/>
+        <Class IRI="#Campaign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coaEfficacy"/>
+        <Class IRI="#CourseOfAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fromCampaign"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fromIdentity"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fromSource"/>
+        <Class IRI="#CTIBaseSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#Campaign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActor"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAffectOnSystemRessource"/>
+        <Class IRI="#SystemAffecting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAffectingConsequence"/>
+        <Class IRI="#SystemAffecting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAffectingLikehood"/>
+        <Class IRI="#SystemAffecting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAttackPattern"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEffect"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <Class IRI="#CTIBaseSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIncidentState"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasJudgement"/>
+        <Class IRI="#Observable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMotivation"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPriority"/>
+        <Class IRI="#Judgement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRating"/>
+        <Class IRI="#Judgement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubWeakness"/>
+        <Class IRI="#Weakness"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#indicates"/>
+        <Class IRI="#Indicator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDiscoveredBy"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mitiagesIncident"/>
+        <Class IRI="#CourseOfAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mitiagesTool"/>
+        <Class IRI="#CourseOfAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mitigatesAttackPattern"/>
+        <Class IRI="#CourseOfAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mitigatesMalware"/>
+        <Class IRI="#CourseOfAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#observedAt"/>
+        <Class IRI="#Sighting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#observedBy"/>
+        <Class IRI="#Sighting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfIncident"/>
+        <Class IRI="#Sighting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#producedBy"/>
+        <Class IRI="#CTIBaseSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatedCourseOfAction"/>
+        <Class IRI="#CourseOfAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resolvedAs"/>
+        <Class IRI="#Sighting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#takenCourseOfAction"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#variantOfWeakness"/>
+        <Class IRI="#Weakness"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assignedIdentity"/>
+        <Class IRI="#Identity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#attacksTarget"/>
+        <Class IRI="#Target"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#attributedTo"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOnIndicator"/>
+        <Class IRI="#Indicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOnObservable"/>
+        <Class IRI="#Observable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOnSighting"/>
+        <Class IRI="#Sighting"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOnWeakness"/>
+        <Class IRI="#Weakness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#becauseSeen"/>
+        <Class IRI="#Observable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#campaignStatus"/>
+        <Class IRI="#CampaignStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coaEfficacy"/>
+        <Class IRI="#CourseOfActionEfficacy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#foundAtLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fromCampaign"/>
+        <Class IRI="#Campaign"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fromIdentity"/>
+        <Class IRI="#Identity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fromSource"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#CampaignActivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActor"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAffectOnSystemRessource"/>
+        <Class IRI="#SystemRessources"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAffectingConsequence"/>
+        <Class IRI="#AffectingConsequence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAffectingLikehood"/>
+        <Class IRI="#AffectingLikehood"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAttackPattern"/>
+        <Class IRI="#AttackPattern"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConfidence"/>
+        <Class IRI="#Confidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEffect"/>
+        <Class IRI="#AttackEffect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <Class IRI="#Feedback"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIdentity"/>
+        <Class IRI="#Identity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIncidentState"/>
+        <Class IRI="#IncidentStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIntendedAttackEffect"/>
+        <Class IRI="#AttackEffect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasJudgement"/>
+        <Class IRI="#Judgement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMotivation"/>
+        <Class IRI="#Motivation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPriority"/>
+        <Class IRI="#Priority"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRating"/>
+        <Class IRI="#Rating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSeverity"/>
+        <Class IRI="#Severity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubWeakness"/>
+        <Class IRI="#Weakness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#indicates"/>
+        <Class IRI="#Indicateable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDiscoveredBy"/>
+        <Class IRI="#IncidentDiscovery"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mitiagesIncident"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mitiagesTool"/>
+        <Class IRI="#Tool"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mitigatesAttackPattern"/>
+        <Class IRI="#AttackPattern"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mitigatesMalware"/>
+        <Class IRI="#Malware"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#observedAt"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#observedBy"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfIncident"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#producedBy"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatedCourseOfAction"/>
+        <Class IRI="#CourseOfAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resolvedAs"/>
+        <Class IRI="#Resolution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takenCourseOfAction"/>
+        <Class IRI="#CourseOfAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesAttackPattern"/>
+        <Class IRI="#AttackPattern"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesMalware"/>
+        <Class IRI="#Malware"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesTool"/>
+        <Class IRI="#Tool"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#variantOfWeakness"/>
+        <Class IRI="#Weakness"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#abstractionLevel"/>
+        <Class IRI="#AttackEffect"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#activityTime"/>
+        <Class IRI="#CampaignActivity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#campaignType"/>
+        <Class IRI="#Campaign"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#closedIncidentTime"/>
+        <Class IRI="#Incident"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#coaSideEffect"/>
+        <Class IRI="#CourseOfAction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#commonVulnerableEnueration"/>
+        <Class IRI="#Vulnerable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#commonWeaknessEnumeration"/>
+        <Class IRI="#Weakness"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#created"/>
+        <Class IRI="#CTIBase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#CTIBase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#discoveredIncidentTime"/>
+        <Class IRI="#Incident"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#externalReference"/>
+        <Class IRI="#CTIBase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#feedbackReason"/>
+        <Class IRI="#Feedback"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#SimpleObservable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#impactDescription"/>
+        <Class IRI="#Indicator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#malwareVersion"/>
+        <Class IRI="#Malware"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#modeOfIntroduction"/>
+        <Class IRI="#Weakness"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#observedTime"/>
+        <Class IRI="#Sighting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#operatingSystem"/>
+        <Class IRI="#Weakness"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rejectedIncidentTime"/>
+        <Class IRI="#Incident"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#remediatedIncidentTime"/>
+        <Class IRI="#Incident"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#reportedIncidentTime"/>
+        <Class IRI="#Incident"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#revision"/>
+        <Class IRI="#CTIBase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#schemaVersion"/>
+        <Class IRI="#CTIBase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sensorDescription"/>
+        <Class IRI="#Sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sensorName"/>
+        <Class IRI="#Sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#shortDescription"/>
+        <Class IRI="#CTIBase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#snortSignature"/>
+        <Class IRI="#SnortIndicator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sourceName"/>
+        <Class IRI="#Source"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sourceURL"/>
+        <Class IRI="#Source"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#CTIBase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tlp"/>
+        <Class IRI="#CTIBase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#toolVersion"/>
+        <Class IRI="#Tool"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#abstractionLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#activityTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#campaignType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#closedIncidentTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#coaSideEffect"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#commonVulnerableEnueration"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#commonWeaknessEnumeration"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#created"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#discoveredIncidentTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#externalReference"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#feedbackReason"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#impactDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#malwareVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mitreAttackPhase"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#modeOfIntroduction"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#observedTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#operatingSystem"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rejectedIncidentTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#remediatedIncidentTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#reportedIncidentTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#revision"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#schemaVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sensorDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sensorName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#shortDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#snortSignature"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sourceName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sourceURL"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tlp"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#toolVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <HasKey>
+        <Class IRI="#SimpleObservable"/>
+        <DataProperty IRI="#hasValue"/>
+    </HasKey>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.16) https://github.com/owlcs/owlapi -->
+
