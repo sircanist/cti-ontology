@@ -99,6 +99,9 @@
         <Class IRI="#CleanRating"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ClosedIncidentState"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CommonRating"/>
     </Declaration>
     <Declaration>
@@ -118,6 +121,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Confidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContainmentAchievedIncidentState"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CourseOfAction"/>
@@ -225,6 +231,9 @@
         <Class IRI="#HackerActor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#HackerGroupIdentity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HacktivistActor"/>
     </Declaration>
     <Declaration>
@@ -249,9 +258,6 @@
         <Class IRI="#HighConfidence"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HighIncidentStatus"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#HighPriority"/>
     </Declaration>
     <Declaration>
@@ -265,9 +271,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#HostNameAtom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#IOCIndicator"/>
     </Declaration>
     <Declaration>
         <Class IRI="#IPAtom"/>
@@ -309,7 +312,7 @@
         <Class IRI="#IncidentResponseDiscovery"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#IncidentState"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Indicateable"/>
@@ -432,7 +435,10 @@
         <Class IRI="#NeutralFeedback"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NewIncidentStatus"/>
+        <Class IRI="#NewIncidentState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoEffect"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NoneCOACost"/>
@@ -441,7 +447,7 @@
         <Class IRI="#NoneCOAEfficacy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NoneIncidentStatus"/>
+        <Class IRI="#NoneIncidentState"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Observable"/>
@@ -453,7 +459,10 @@
         <Class IRI="#OngoingCampaignStatus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OpenIncidentStatus"/>
+        <Class IRI="#OpenIOCIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenIncidentState"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OpportunisticMotivation"/>
@@ -522,6 +531,12 @@
         <Class IRI="#RegistryValueAtom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RejectedIncidentState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReportedIncidentState"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Resolution"/>
     </Declaration>
     <Declaration>
@@ -558,10 +573,13 @@
         <Class IRI="#Source"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StalledIncidentStatus"/>
+        <Class IRI="#StalledIncidentState"/>
     </Declaration>
     <Declaration>
         <Class IRI="#StateActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurricataIndicator"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SuspiciousRating"/>
@@ -603,7 +621,7 @@
         <Class IRI="#UnknownDiscovery"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UnknownIncidentStatus"/>
+        <Class IRI="#UnknownIncidentState"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UnknownRating"/>
@@ -661,6 +679,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#campaignStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coaCost"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#coaEfficacy"/>
@@ -729,6 +750,9 @@
         <ObjectProperty IRI="#hasSeverity"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasSighting"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasSubWeakness"/>
     </Declaration>
     <Declaration>
@@ -756,9 +780,6 @@
         <ObjectProperty IRI="#observedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#partOfIncident"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#producedBy"/>
     </Declaration>
     <Declaration>
@@ -766,6 +787,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#resolvedAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#seenObservable"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#takenCourseOfAction"/>
@@ -823,6 +847,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#impactDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#indicatorValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#malwareVersion"/>
@@ -1185,6 +1212,10 @@
         <Class IRI="#Rating"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ClosedIncidentState"/>
+        <Class IRI="#IncidentState"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CommonRating"/>
         <Class IRI="#Rating"/>
     </SubClassOf>
@@ -1213,8 +1244,19 @@
         <Class IRI="#CTIBaseSource"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ContainmentAchievedIncidentState"/>
+        <Class IRI="#IncidentState"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CourseOfAction"/>
         <Class IRI="#CTIBaseSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseOfAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#coaCost"/>
+            <Class IRI="#CourseOfActionCost"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CourseOfAction"/>
@@ -1409,6 +1451,10 @@
         <Class IRI="#Actor"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HackerGroupIdentity"/>
+        <Class IRI="#Identity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HacktivistActor"/>
         <Class IRI="#Actor"/>
     </SubClassOf>
@@ -1441,10 +1487,6 @@
         <Class IRI="#Confidence"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HighIncidentStatus"/>
-        <Class IRI="#IncidentStatus"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#HighPriority"/>
         <Class IRI="#Priority"/>
     </SubClassOf>
@@ -1463,10 +1505,6 @@
     <SubClassOf>
         <Class IRI="#HostNameAtom"/>
         <Class IRI="#SimpleObservable"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#IOCIndicator"/>
-        <Class IRI="#RuleIndicator"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IPAtom"/>
@@ -1558,7 +1596,14 @@
         <Class IRI="#Incident"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasIncidentState"/>
-            <Class IRI="#IncidentStatus"/>
+            <Class IRI="#IncidentState"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSighting"/>
+            <Class IRI="#Sighting"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1584,7 +1629,7 @@
         <Class IRI="#IncidentDiscovery"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#IncidentState"/>
         <Class IRI="#CTIBaseSource"/>
     </SubClassOf>
     <SubClassOf>
@@ -1620,6 +1665,13 @@
         <Class IRI="#Indicator"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="#impactDescription"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicator"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#indicatorValue"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
@@ -1846,8 +1898,12 @@
         <Class IRI="#Feedback"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NewIncidentStatus"/>
-        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#NewIncidentState"/>
+        <Class IRI="#IncidentState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoEffect"/>
+        <Class IRI="#AttackEffect"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NoneCOACost"/>
@@ -1858,8 +1914,8 @@
         <Class IRI="#CourseOfActionEfficacy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NoneIncidentStatus"/>
-        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#NoneIncidentState"/>
+        <Class IRI="#IncidentState"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Observable"/>
@@ -1888,8 +1944,12 @@
         <Class IRI="#CampaignStatus"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OpenIncidentStatus"/>
-        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#OpenIOCIndicator"/>
+        <Class IRI="#RuleIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenIncidentState"/>
+        <Class IRI="#IncidentState"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OpportunisticMotivation"/>
@@ -1980,6 +2040,14 @@
         <Class IRI="#SimpleObservable"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RejectedIncidentState"/>
+        <Class IRI="#IncidentState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReportedIncidentState"/>
+        <Class IRI="#IncidentState"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Resolution"/>
         <Class IRI="#CTIBaseSource"/>
     </SubClassOf>
@@ -2060,15 +2128,15 @@
     <SubClassOf>
         <Class IRI="#Sighting"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#partOfIncident"/>
-            <Class IRI="#Incident"/>
+            <ObjectProperty IRI="#resolvedAs"/>
+            <Class IRI="#Resolution"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sighting"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#resolvedAs"/>
-            <Class IRI="#Resolution"/>
+            <ObjectProperty IRI="#seenObservable"/>
+            <Class IRI="#Observable"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2126,12 +2194,16 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StalledIncidentStatus"/>
-        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#StalledIncidentState"/>
+        <Class IRI="#IncidentState"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StateActor"/>
         <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurricataIndicator"/>
+        <Class IRI="#RuleIndicator"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SuspiciousRating"/>
@@ -2235,8 +2307,8 @@
         <Class IRI="#IncidentDiscovery"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#UnknownIncidentStatus"/>
-        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#UnknownIncidentState"/>
+        <Class IRI="#IncidentState"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UnknownRating"/>
@@ -2348,7 +2420,7 @@
         <Class IRI="#Identity"/>
         <Class IRI="#Incident"/>
         <Class IRI="#IncidentDiscovery"/>
-        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#IncidentState"/>
         <Class IRI="#Indicateable"/>
         <Class IRI="#Indicator"/>
         <Class IRI="#Judgement"/>
@@ -2412,6 +2484,17 @@
         <Class IRI="#UnknownRating"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#ClosedIncidentState"/>
+        <Class IRI="#ContainmentAchievedIncidentState"/>
+        <Class IRI="#NewIncidentState"/>
+        <Class IRI="#NoneIncidentState"/>
+        <Class IRI="#OpenIncidentState"/>
+        <Class IRI="#RejectedIncidentState"/>
+        <Class IRI="#ReportedIncidentState"/>
+        <Class IRI="#StalledIncidentState"/>
+        <Class IRI="#UnknownIncidentState"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#ComplexObservable"/>
         <Class IRI="#SimpleObservable"/>
     </DisjointClasses>
@@ -2451,14 +2534,6 @@
         <Class IRI="#MediumConfidence"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#HighIncidentStatus"/>
-        <Class IRI="#NewIncidentStatus"/>
-        <Class IRI="#NoneIncidentStatus"/>
-        <Class IRI="#OpenIncidentStatus"/>
-        <Class IRI="#StalledIncidentStatus"/>
-        <Class IRI="#UnknownIncidentStatus"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#HighPriority"/>
         <Class IRI="#LowPriority"/>
         <Class IRI="#MediumPriority"/>
@@ -2469,10 +2544,6 @@
         <Class IRI="#MediumSeverity"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#IOCIndicator"/>
-        <Class IRI="#SnortIndicator"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#IPv4Atom"/>
         <Class IRI="#IPv6Atom"/>
     </DisjointClasses>
@@ -2480,6 +2551,11 @@
         <Class IRI="#ObservableIndicator"/>
         <Class IRI="#PatternIndicator"/>
         <Class IRI="#RuleIndicator"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OpenIOCIndicator"/>
+        <Class IRI="#SnortIndicator"/>
+        <Class IRI="#SurricataIndicator"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#RealLocation"/>
@@ -2538,6 +2614,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#campaignStatus"/>
         <Class IRI="#Campaign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coaCost"/>
+        <Class IRI="#CourseOfAction"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#coaEfficacy"/>
@@ -2608,6 +2688,10 @@
         <Class IRI="#Judgement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSighting"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSubWeakness"/>
         <Class IRI="#Weakness"/>
     </ObjectPropertyDomain>
@@ -2644,10 +2728,6 @@
         <Class IRI="#Sighting"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#partOfIncident"/>
-        <Class IRI="#Sighting"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#producedBy"/>
         <Class IRI="#CTIBaseSource"/>
     </ObjectPropertyDomain>
@@ -2657,6 +2737,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#resolvedAs"/>
+        <Class IRI="#Sighting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#seenObservable"/>
         <Class IRI="#Sighting"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -2702,6 +2786,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#campaignStatus"/>
         <Class IRI="#CampaignStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coaCost"/>
+        <Class IRI="#CourseOfActionCost"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#coaEfficacy"/>
@@ -2765,7 +2853,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasIncidentState"/>
-        <Class IRI="#IncidentStatus"/>
+        <Class IRI="#IncidentState"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasIntendedAttackEffect"/>
@@ -2790,6 +2878,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSeverity"/>
         <Class IRI="#Severity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSighting"/>
+        <Class IRI="#Sighting"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSubWeakness"/>
@@ -2828,10 +2920,6 @@
         <Class IRI="#Sensor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#partOfIncident"/>
-        <Class IRI="#Incident"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#producedBy"/>
         <Class IRI="#Source"/>
     </ObjectPropertyRange>
@@ -2842,6 +2930,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#resolvedAs"/>
         <Class IRI="#Resolution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#seenObservable"/>
+        <Class IRI="#Observable"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#takenCourseOfAction"/>
@@ -2917,6 +3009,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#impactDescription"/>
+        <Class IRI="#Indicator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#indicatorValue"/>
         <Class IRI="#Indicator"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -3045,6 +3141,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#impactDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#indicatorValue"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -3244,6 +3344,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#ClosedIncidentState</IRI>
+        <Literal xml:lang="en">ClosedIncidentState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#CommonRating</IRI>
         <Literal xml:lang="en">CommonRating</Literal>
     </AnnotationAssertion>
@@ -3276,6 +3381,11 @@
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#Confidence</IRI>
         <Literal xml:lang="en">Confidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#ContainmentAchievedIncidentState</IRI>
+        <Literal xml:lang="en">ContainmentAchievedIncidentState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -3454,6 +3564,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#HackerGroupIdentity</IRI>
+        <Literal xml:lang="en">HackerGroupIdentity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#HacktivistActor</IRI>
         <Literal xml:lang="en">HacktivistActor</Literal>
     </AnnotationAssertion>
@@ -3494,11 +3609,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#HighIncidentStatus</IRI>
-        <Literal xml:lang="en">HighIncidentStatus</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#HighPriority</IRI>
         <Literal xml:lang="en">HighPriority</Literal>
     </AnnotationAssertion>
@@ -3521,11 +3631,6 @@
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#HostNameAtom</IRI>
         <Literal xml:lang="en">HostNameAtom</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#IOCIndicator</IRI>
-        <Literal xml:lang="en">IOCIndicator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -3604,8 +3709,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#IncidentStatus</IRI>
-        <Literal xml:lang="en">IncidentStatus</Literal>
+        <IRI>#IncidentState</IRI>
+        <Literal xml:lang="en">IncidentState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -3809,8 +3914,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#NewIncidentStatus</IRI>
-        <Literal xml:lang="en">NewIncidentStatus</Literal>
+        <IRI>#NewIncidentState</IRI>
+        <Literal xml:lang="en">NewIncidentState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#NoEffect</IRI>
+        <Literal xml:lang="en">NoEffect</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -3824,8 +3934,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#NoneIncidentStatus</IRI>
-        <Literal xml:lang="en">NoneIncidentStatus</Literal>
+        <IRI>#NoneIncidentState</IRI>
+        <Literal xml:lang="en">NoneIncidentState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -3844,8 +3954,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#OpenIncidentStatus</IRI>
-        <Literal xml:lang="en">OpenIncidentStatus</Literal>
+        <IRI>#OpenIOCIndicator</IRI>
+        <Literal xml:lang="en">OpenIOCIndicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#OpenIncidentState</IRI>
+        <Literal xml:lang="en">OpenIncidentState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -3964,6 +4079,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#RejectedIncidentState</IRI>
+        <Literal xml:lang="en">RejectedIncidentState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#ReportedIncidentState</IRI>
+        <Literal xml:lang="en">ReportedIncidentState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#Resolution</IRI>
         <Literal xml:lang="en">Resolution</Literal>
     </AnnotationAssertion>
@@ -4024,13 +4149,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#StalledIncidentStatus</IRI>
-        <Literal xml:lang="en">StalledIncidentStatus</Literal>
+        <IRI>#StalledIncidentState</IRI>
+        <Literal xml:lang="en">StalledIncidentState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#StateActor</IRI>
         <Literal xml:lang="en">StateActor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#SurricataIndicator</IRI>
+        <Literal xml:lang="en">SurricataIndicator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -4099,8 +4229,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#UnknownIncidentStatus</IRI>
-        <Literal xml:lang="en">UnknownIncidentStatus</Literal>
+        <IRI>#UnknownIncidentState</IRI>
+        <Literal xml:lang="en">UnknownIncidentState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -4216,6 +4346,11 @@
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#closedIncidentTime</IRI>
         <Literal xml:lang="en">closedIncidentTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#coaCost</IRI>
+        <Literal xml:lang="en">coaCost</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -4369,6 +4504,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#hasSighting</IRI>
+        <Literal xml:lang="en">hasSighting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#hasSubWeakness</IRI>
         <Literal xml:lang="en">hasSubWeakness</Literal>
     </AnnotationAssertion>
@@ -4386,6 +4526,11 @@
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#indicates</IRI>
         <Literal xml:lang="en">indicates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#indicatorValue</IRI>
+        <Literal xml:lang="en">indicatorValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -4449,11 +4594,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#partOfIncident</IRI>
-        <Literal xml:lang="en">partOfIncident</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#producedBy</IRI>
         <Literal xml:lang="en">producedBy</Literal>
     </AnnotationAssertion>
@@ -4491,6 +4631,11 @@
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#schemaVersion</IRI>
         <Literal xml:lang="en">schemaVersion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#seenObservable</IRI>
+        <Literal xml:lang="en">seenObservable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
