@@ -822,6 +822,9 @@
         <ObjectProperty IRI="#variantOfWeakness"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#worksFor"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#abstractionLevel"/>
     </Declaration>
     <Declaration>
@@ -2006,6 +2009,13 @@
         <Class IRI="#Identity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PersonIdentity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#worksFor"/>
+            <Class IRI="#CompanyIdentity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PhysicalAccessRestrictionsCoA"/>
         <Class IRI="#CourseOfAction"/>
     </SubClassOf>
@@ -2760,6 +2770,10 @@
         <ObjectProperty IRI="#variantOfWeakness"/>
         <Class IRI="#Weakness"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksFor"/>
+        <Class IRI="#PersonIdentity"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#assignedIdentity"/>
         <Class IRI="#Identity"/>
@@ -2959,6 +2973,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#variantOfWeakness"/>
         <Class IRI="#Weakness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksFor"/>
+        <Class IRI="#CompanyIdentity"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#abstractionLevel"/>
@@ -4713,6 +4731,11 @@
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#variantOfWeakness</IRI>
         <Literal xml:lang="en">variantOfWeakness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#worksFor</IRI>
+        <Literal xml:lang="en">worksFor</Literal>
     </AnnotationAssertion>
 </Ontology>
 
