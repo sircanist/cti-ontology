@@ -51,6 +51,9 @@
         <Class IRI="#AlterExecutionLogicConsequence"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AntiVirusSensor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AntivirusDiscovery"/>
     </Declaration>
     <Declaration>
@@ -216,6 +219,9 @@
         <Class IRI="#FinancialMotivation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FirewallSensor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#FraudEffect"/>
     </Declaration>
     <Declaration>
@@ -270,7 +276,13 @@
         <Class IRI="#HoneyPotCoA"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#HoneyPotSensor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HostNameAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanSensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#IPAtom"/>
@@ -501,6 +513,9 @@
         <Class IRI="#ProcessNameAtom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ProxySensor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PublicDisclosureCoA"/>
     </Declaration>
     <Declaration>
@@ -568,6 +583,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#SnortIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SnortSensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Source"/>
@@ -664,9 +682,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#basedOnIndicator"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#basedOnObservable"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#basedOnSighting"/>
@@ -882,10 +897,7 @@
         <DataProperty IRI="#schemaVersion"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#sensorDescription"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#sensorName"/>
+        <DataProperty IRI="#sensorVersion"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#shortDescription"/>
@@ -912,10 +924,19 @@
         <NamedIndividual IRI="#BadIPAddress"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#OtherBadIPAddress"/>
+        <DataProperty IRI="#sensorName"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedOnObservable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtherBadIPAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sensorDescription"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AccountTakeoverEffect"/>
@@ -975,6 +996,10 @@
     <SubClassOf>
         <Class IRI="#AlterExecutionLogicConsequence"/>
         <Class IRI="#AffectingConsequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiVirusSensor"/>
+        <Class IRI="#Sensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AntivirusDiscovery"/>
@@ -1431,6 +1456,10 @@
         <Class IRI="#Motivation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FirewallSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FraudEffect"/>
         <Class IRI="#AttackEffect"/>
     </SubClassOf>
@@ -1503,8 +1532,16 @@
         <Class IRI="#CourseOfAction"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HoneyPotSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HostNameAtom"/>
         <Class IRI="#SimpleObservable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanSensor"/>
+        <Class IRI="#Sensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IPAtom"/>
@@ -1719,13 +1756,6 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#basedOnIndicator"/>
             <Class IRI="#Indicator"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Judgement"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#basedOnObservable"/>
-            <Class IRI="#Observable"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2000,6 +2030,10 @@
         <Class IRI="#SimpleObservable"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ProxySensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PublicDisclosureCoA"/>
         <Class IRI="#CourseOfAction"/>
     </SubClassOf>
@@ -2078,14 +2112,7 @@
     <SubClassOf>
         <Class IRI="#Sensor"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#sensorDescription"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sensor"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#sensorName"/>
+            <DataProperty IRI="#sensorVersion"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
@@ -2167,6 +2194,10 @@
             <DataProperty IRI="#snortSignature"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SnortSensor"/>
+        <Class IRI="#Sensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Source"/>
@@ -2565,24 +2596,6 @@
         <Class IRI="#SHA256Atom"/>
         <Class IRI="#SHA512Atom"/>
     </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#IPv4Atom"/>
-        <NamedIndividual IRI="#BadIPAddress"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#IPv4Atom"/>
-        <NamedIndividual IRI="#OtherBadIPAddress"/>
-    </ClassAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasValue"/>
-        <NamedIndividual IRI="#BadIPAddress"/>
-        <Literal>1.2.3.4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasValue"/>
-        <NamedIndividual IRI="#OtherBadIPAddress"/>
-        <Literal>1.2.3.4</Literal>
-    </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#assignedIdentity"/>
         <Class IRI="#Incident"/>
@@ -2593,10 +2606,6 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#basedOnIndicator"/>
-        <Class IRI="#Judgement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#basedOnObservable"/>
         <Class IRI="#Judgement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -2766,10 +2775,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#basedOnIndicator"/>
         <Class IRI="#Indicator"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#basedOnObservable"/>
-        <Class IRI="#Observable"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#basedOnSighting"/>
@@ -3052,11 +3057,7 @@
         <Class IRI="#CTIBase"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#sensorDescription"/>
-        <Class IRI="#Sensor"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#sensorName"/>
+        <DataProperty IRI="#sensorVersion"/>
         <Class IRI="#Sensor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -3188,11 +3189,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#sensorDescription"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#sensorName"/>
+        <DataProperty IRI="#sensorVersion"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -3259,6 +3256,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#AntiVirusSensor</IRI>
+        <Literal xml:lang="en">AntiVirusSensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#AntivirusDiscovery</IRI>
         <Literal xml:lang="en">AntivirusDiscovery</Literal>
     </AnnotationAssertion>
@@ -3276,11 +3278,6 @@
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#AuditDiscovery</IRI>
         <Literal xml:lang="en">AuditDiscovery</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#BadIPAddress</IRI>
-        <Literal xml:lang="en">BadIPAddress</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -3539,6 +3536,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#FirewallSensor</IRI>
+        <Literal xml:lang="en">FirewallSensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#FraudEffect</IRI>
         <Literal xml:lang="en">FraudEffect</Literal>
     </AnnotationAssertion>
@@ -3629,8 +3631,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#HoneyPotSensor</IRI>
+        <Literal xml:lang="en">HoneyPotSensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#HostNameAtom</IRI>
         <Literal xml:lang="en">HostNameAtom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#HumanSensor</IRI>
+        <Literal xml:lang="en">HumanSensor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -3969,11 +3981,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#OtherBadIPAddress</IRI>
-        <Literal xml:lang="en">OtherBadIPAddress</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#OtherCoA</IRI>
         <Literal xml:lang="en">OtherCoA</Literal>
     </AnnotationAssertion>
@@ -4026,6 +4033,11 @@
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#ProcessNameAtom</IRI>
         <Literal xml:lang="en">ProcessNameAtom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#ProxySensor</IRI>
+        <Literal xml:lang="en">ProxySensor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -4141,6 +4153,11 @@
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#SnortIndicator</IRI>
         <Literal xml:lang="en">SnortIndicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#SnortSensor</IRI>
+        <Literal xml:lang="en">SnortSensor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -4311,11 +4328,6 @@
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
         <IRI>#basedOnIndicator</IRI>
         <Literal xml:lang="en">basedOnIndicator</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#basedOnObservable</IRI>
-        <Literal xml:lang="en">basedOnObservable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
@@ -4639,13 +4651,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#sensorDescription</IRI>
-        <Literal xml:lang="en">sensorDescription</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-        <IRI>#sensorName</IRI>
-        <Literal xml:lang="en">sensorName</Literal>
+        <IRI>#sensorVersion</IRI>
+        <Literal xml:lang="en">sensorVersion</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
