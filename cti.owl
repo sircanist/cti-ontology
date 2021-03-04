@@ -924,22 +924,7 @@
         <DataProperty IRI="#toolVersion"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#BadIPAddress"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#sensorName"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#basedOnObservable"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#OtherBadIPAddress"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#sensorDescription"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AccountTakeoverEffect"/>
@@ -2489,6 +2474,10 @@
         <Class IRI="#FileRessource"/>
         <Class IRI="#MemoryRessource"/>
         <Class IRI="#SystemProcessRessource"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CTIBaseSource"/>
+        <Class IRI="#Source"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#CertificateCommonNameAtom"/>
